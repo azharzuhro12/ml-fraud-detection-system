@@ -1,0 +1,501 @@
+user_id,persona,display_name,home_city,home_city_label,home_lat,home_lon,trusted_device_id,trusted_ip_subnet,typical_spend_mean_idr,typical_spend_std_idr,wallet_balance_idr,account_age_days,primary_cat_1,primary_cat_2
+user_0000,karyawan_jakarta,Budi Santoso (Karyawan Swasta - Jakarta),jakarta,Jakarta,-6.20118,106.8196,dev_trusted_0000,ip_home_0000,139070,96992,18500000,464,food_beverage,groceries_retail
+user_0001,mahasiswa_bandung,Putri Lestari (Mahasiswi - Bandung),bandung,Bandung,-6.95005,107.6223,dev_trusted_0001,ip_home_0000,52390,34911,4200000,203,food_beverage,digital_vouchers_crypto
+user_0002,pengusaha_surabaya,Hendra Wijaya (Pengusaha - Surabaya),surabaya,Surabaya,-7.23552,112.77154,dev_trusted_0002,ip_home_0001,858418,642997,65000000,1162,electronics_gadgets,p2p_cash_transfer
+user_0003,freelancer_bali,Kevin Pratama (Desainer Freelance - Bali),denpasar,Denpasar (Bali),-8.69198,115.22182,dev_trusted_0003,ip_home_0001,179795,158447,24000000,485,food_beverage,electronics_gadgets
+user_0004,karyawan_jakarta,User #0004 (Jakarta),jakarta,Jakarta,-6.21342,106.82858,dev_trusted_0004,ip_home_0002,147922,83029,18500000,601,food_beverage,groceries_retail
+user_0005,mahasiswa_bandung,User #0005 (Bandung),bandung,Bandung,-6.9263,107.63241,dev_trusted_0005,ip_home_0002,58014,37166,4200000,318,food_beverage,digital_vouchers_crypto
+user_0006,pengusaha_surabaya,User #0006 (Surabaya),surabaya,Surabaya,-7.20396,112.74194,dev_trusted_0006,ip_home_0003,784689,482863,65000000,1175,electronics_gadgets,p2p_cash_transfer
+user_0007,freelancer_bali,User #0007 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.64228,115.20975,dev_trusted_0007,ip_home_0003,183535,122685,24000000,548,food_beverage,electronics_gadgets
+user_0008,karyawan_jakarta,User #0008 (Jakarta),jakarta,Jakarta,-6.19022,106.85918,dev_trusted_0008,ip_home_0004,112521,87960,18500000,650,food_beverage,groceries_retail
+user_0009,mahasiswa_bandung,User #0009 (Bandung),bandung,Bandung,-6.91203,107.64089,dev_trusted_0009,ip_home_0004,56844,38564,4200000,286,food_beverage,digital_vouchers_crypto
+user_0010,pengusaha_surabaya,User #0010 (Surabaya),surabaya,Surabaya,-7.25027,112.76788,dev_trusted_0010,ip_home_0005,664212,523627,65000000,1077,electronics_gadgets,p2p_cash_transfer
+user_0011,freelancer_bali,User #0011 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.68647,115.20572,dev_trusted_0011,ip_home_0005,257090,121817,24000000,577,food_beverage,electronics_gadgets
+user_0012,karyawan_jakarta,User #0012 (Jakarta),jakarta,Jakarta,-6.25087,106.83723,dev_trusted_0012,ip_home_0006,128051,92474,18500000,704,food_beverage,groceries_retail
+user_0013,mahasiswa_bandung,User #0013 (Bandung),bandung,Bandung,-6.89767,107.61038,dev_trusted_0013,ip_home_0006,51185,39504,4200000,262,food_beverage,digital_vouchers_crypto
+user_0014,pengusaha_surabaya,User #0014 (Surabaya),surabaya,Surabaya,-7.28939,112.72377,dev_trusted_0014,ip_home_0007,732769,591015,65000000,1132,electronics_gadgets,p2p_cash_transfer
+user_0015,freelancer_bali,User #0015 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.65324,115.20192,dev_trusted_0015,ip_home_0007,214994,153137,24000000,462,food_beverage,electronics_gadgets
+user_0016,karyawan_jakarta,User #0016 (Jakarta),jakarta,Jakarta,-6.19738,106.82905,dev_trusted_0016,ip_home_0008,118192,80132,18500000,532,food_beverage,groceries_retail
+user_0017,mahasiswa_bandung,User #0017 (Bandung),bandung,Bandung,-6.90533,107.60736,dev_trusted_0017,ip_home_0008,55103,37523,4200000,320,food_beverage,digital_vouchers_crypto
+user_0018,pengusaha_surabaya,User #0018 (Surabaya),surabaya,Surabaya,-7.24087,112.74964,dev_trusted_0018,ip_home_0009,796029,543423,65000000,968,electronics_gadgets,p2p_cash_transfer
+user_0019,freelancer_bali,User #0019 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.70668,115.17953,dev_trusted_0019,ip_home_0009,178586,148395,24000000,408,food_beverage,electronics_gadgets
+user_0020,karyawan_jakarta,User #0020 (Jakarta),jakarta,Jakarta,-6.21825,106.87808,dev_trusted_0020,ip_home_0010,118320,94403,18500000,555,food_beverage,groceries_retail
+user_0021,mahasiswa_bandung,User #0021 (Bandung),bandung,Bandung,-6.92264,107.59535,dev_trusted_0021,ip_home_0010,52202,39411,4200000,124,food_beverage,digital_vouchers_crypto
+user_0022,pengusaha_surabaya,User #0022 (Surabaya),surabaya,Surabaya,-7.24664,112.75804,dev_trusted_0022,ip_home_0011,774245,430700,65000000,1126,electronics_gadgets,p2p_cash_transfer
+user_0023,freelancer_bali,User #0023 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.68374,115.21842,dev_trusted_0023,ip_home_0011,210688,173637,24000000,468,food_beverage,electronics_gadgets
+user_0024,karyawan_jakarta,User #0024 (Jakarta),jakarta,Jakarta,-6.23439,106.85008,dev_trusted_0024,ip_home_0012,129124,102329,18500000,715,food_beverage,groceries_retail
+user_0025,mahasiswa_bandung,User #0025 (Bandung),bandung,Bandung,-6.90858,107.65568,dev_trusted_0025,ip_home_0012,45192,31641,4200000,196,food_beverage,digital_vouchers_crypto
+user_0026,pengusaha_surabaya,User #0026 (Surabaya),surabaya,Surabaya,-7.26725,112.71768,dev_trusted_0026,ip_home_0013,930981,531666,65000000,987,electronics_gadgets,p2p_cash_transfer
+user_0027,freelancer_bali,User #0027 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.69589,115.22044,dev_trusted_0027,ip_home_0013,236400,181931,24000000,752,food_beverage,electronics_gadgets
+user_0028,karyawan_jakarta,User #0028 (Jakarta),jakarta,Jakarta,-6.19844,106.82086,dev_trusted_0028,ip_home_0014,85024,88413,18500000,566,food_beverage,groceries_retail
+user_0029,mahasiswa_bandung,User #0029 (Bandung),bandung,Bandung,-6.92788,107.6038,dev_trusted_0029,ip_home_0014,53838,40596,4200000,294,food_beverage,digital_vouchers_crypto
+user_0030,pengusaha_surabaya,User #0030 (Surabaya),surabaya,Surabaya,-7.26147,112.72621,dev_trusted_0030,ip_home_0015,636477,509879,65000000,1115,electronics_gadgets,p2p_cash_transfer
+user_0031,freelancer_bali,User #0031 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.6263,115.21586,dev_trusted_0031,ip_home_0015,240956,129514,24000000,383,food_beverage,electronics_gadgets
+user_0032,karyawan_jakarta,User #0032 (Jakarta),jakarta,Jakarta,-6.23293,106.82747,dev_trusted_0032,ip_home_0016,164908,74527,18500000,715,food_beverage,groceries_retail
+user_0033,mahasiswa_bandung,User #0033 (Bandung),bandung,Bandung,-6.94007,107.64239,dev_trusted_0033,ip_home_0016,58175,34177,4200000,276,food_beverage,digital_vouchers_crypto
+user_0034,pengusaha_surabaya,User #0034 (Surabaya),surabaya,Surabaya,-7.27387,112.76325,dev_trusted_0034,ip_home_0017,791989,448887,65000000,1004,electronics_gadgets,p2p_cash_transfer
+user_0035,freelancer_bali,User #0035 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66619,115.25208,dev_trusted_0035,ip_home_0017,215039,137508,24000000,515,food_beverage,electronics_gadgets
+user_0036,karyawan_jakarta,User #0036 (Jakarta),jakarta,Jakarta,-6.17615,106.85108,dev_trusted_0036,ip_home_0018,117295,99105,18500000,678,food_beverage,groceries_retail
+user_0037,mahasiswa_bandung,User #0037 (Bandung),bandung,Bandung,-6.87911,107.62368,dev_trusted_0037,ip_home_0018,44898,27817,4200000,428,food_beverage,digital_vouchers_crypto
+user_0038,pengusaha_surabaya,User #0038 (Surabaya),surabaya,Surabaya,-7.21441,112.74761,dev_trusted_0038,ip_home_0019,801143,670569,65000000,1020,electronics_gadgets,p2p_cash_transfer
+user_0039,freelancer_bali,User #0039 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.69287,115.22868,dev_trusted_0039,ip_home_0019,197569,139892,24000000,475,food_beverage,electronics_gadgets
+user_0040,karyawan_jakarta,User #0040 (Jakarta),jakarta,Jakarta,-6.20036,106.88079,dev_trusted_0040,ip_home_0020,126698,93210,18500000,455,food_beverage,groceries_retail
+user_0041,mahasiswa_bandung,User #0041 (Bandung),bandung,Bandung,-6.91872,107.59802,dev_trusted_0041,ip_home_0020,44944,30389,4200000,249,food_beverage,digital_vouchers_crypto
+user_0042,pengusaha_surabaya,User #0042 (Surabaya),surabaya,Surabaya,-7.2346,112.71894,dev_trusted_0042,ip_home_0021,853905,510056,65000000,1090,electronics_gadgets,p2p_cash_transfer
+user_0043,freelancer_bali,User #0043 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.64543,115.22605,dev_trusted_0043,ip_home_0021,252128,136755,24000000,427,food_beverage,electronics_gadgets
+user_0044,karyawan_jakarta,User #0044 (Jakarta),jakarta,Jakarta,-6.2144,106.85166,dev_trusted_0044,ip_home_0022,128310,71174,18500000,648,food_beverage,groceries_retail
+user_0045,mahasiswa_bandung,User #0045 (Bandung),bandung,Bandung,-6.91179,107.68204,dev_trusted_0045,ip_home_0022,70483,30520,4200000,254,food_beverage,digital_vouchers_crypto
+user_0046,pengusaha_surabaya,User #0046 (Surabaya),surabaya,Surabaya,-7.29409,112.73733,dev_trusted_0046,ip_home_0023,890239,649482,65000000,1054,electronics_gadgets,p2p_cash_transfer
+user_0047,freelancer_bali,User #0047 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.68685,115.15892,dev_trusted_0047,ip_home_0023,204876,117689,24000000,442,food_beverage,electronics_gadgets
+user_0048,karyawan_jakarta,User #0048 (Jakarta),jakarta,Jakarta,-6.23072,106.84324,dev_trusted_0048,ip_home_0024,92042,66295,18500000,831,food_beverage,groceries_retail
+user_0049,mahasiswa_bandung,User #0049 (Bandung),bandung,Bandung,-6.94969,107.59168,dev_trusted_0049,ip_home_0024,70154,50251,4200000,174,food_beverage,digital_vouchers_crypto
+user_0050,pengusaha_surabaya,User #0050 (Surabaya),surabaya,Surabaya,-7.26671,112.76064,dev_trusted_0050,ip_home_0025,1070408,468584,65000000,1097,electronics_gadgets,p2p_cash_transfer
+user_0051,freelancer_bali,User #0051 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.65107,115.22347,dev_trusted_0051,ip_home_0025,198151,137189,24000000,366,food_beverage,electronics_gadgets
+user_0052,karyawan_jakarta,User #0052 (Jakarta),jakarta,Jakarta,-6.21475,106.83894,dev_trusted_0052,ip_home_0026,129353,77919,18500000,682,food_beverage,groceries_retail
+user_0053,mahasiswa_bandung,User #0053 (Bandung),bandung,Bandung,-6.89218,107.62299,dev_trusted_0053,ip_home_0026,57901,35279,4200000,280,food_beverage,digital_vouchers_crypto
+user_0054,pengusaha_surabaya,User #0054 (Surabaya),surabaya,Surabaya,-7.27554,112.76001,dev_trusted_0054,ip_home_0027,837595,722686,65000000,1261,electronics_gadgets,p2p_cash_transfer
+user_0055,freelancer_bali,User #0055 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66085,115.19352,dev_trusted_0055,ip_home_0027,174959,165014,24000000,513,food_beverage,electronics_gadgets
+user_0056,karyawan_jakarta,User #0056 (Jakarta),jakarta,Jakarta,-6.1968,106.80199,dev_trusted_0056,ip_home_0028,142389,90793,18500000,540,food_beverage,groceries_retail
+user_0057,mahasiswa_bandung,User #0057 (Bandung),bandung,Bandung,-6.92929,107.62569,dev_trusted_0057,ip_home_0028,55432,33466,4200000,270,food_beverage,digital_vouchers_crypto
+user_0058,pengusaha_surabaya,User #0058 (Surabaya),surabaya,Surabaya,-7.2638,112.75591,dev_trusted_0058,ip_home_0029,1037615,338250,65000000,1098,electronics_gadgets,p2p_cash_transfer
+user_0059,freelancer_bali,User #0059 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66609,115.22,dev_trusted_0059,ip_home_0029,198284,103108,24000000,519,food_beverage,electronics_gadgets
+user_0060,karyawan_jakarta,User #0060 (Jakarta),jakarta,Jakarta,-6.16562,106.80725,dev_trusted_0060,ip_home_0030,141196,80811,18500000,634,food_beverage,groceries_retail
+user_0061,mahasiswa_bandung,User #0061 (Bandung),bandung,Bandung,-6.94382,107.61074,dev_trusted_0061,ip_home_0030,65725,38058,4200000,435,food_beverage,digital_vouchers_crypto
+user_0062,pengusaha_surabaya,User #0062 (Surabaya),surabaya,Surabaya,-7.22806,112.76308,dev_trusted_0062,ip_home_0031,1072351,586216,65000000,1194,electronics_gadgets,p2p_cash_transfer
+user_0063,freelancer_bali,User #0063 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.67791,115.21426,dev_trusted_0063,ip_home_0031,188031,160781,24000000,383,food_beverage,electronics_gadgets
+user_0064,karyawan_jakarta,User #0064 (Jakarta),jakarta,Jakarta,-6.18924,106.84083,dev_trusted_0064,ip_home_0032,146960,94573,18500000,803,food_beverage,groceries_retail
+user_0065,mahasiswa_bandung,User #0065 (Bandung),bandung,Bandung,-6.89923,107.5798,dev_trusted_0065,ip_home_0032,54447,28846,4200000,233,food_beverage,digital_vouchers_crypto
+user_0066,pengusaha_surabaya,User #0066 (Surabaya),surabaya,Surabaya,-7.21972,112.76804,dev_trusted_0066,ip_home_0033,760886,466368,65000000,1122,electronics_gadgets,p2p_cash_transfer
+user_0067,freelancer_bali,User #0067 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.70091,115.19582,dev_trusted_0067,ip_home_0033,219828,164261,24000000,544,food_beverage,electronics_gadgets
+user_0068,karyawan_jakarta,User #0068 (Jakarta),jakarta,Jakarta,-6.26608,106.85321,dev_trusted_0068,ip_home_0034,126350,90277,18500000,785,food_beverage,groceries_retail
+user_0069,mahasiswa_bandung,User #0069 (Bandung),bandung,Bandung,-6.96908,107.60432,dev_trusted_0069,ip_home_0034,59874,26696,4200000,412,food_beverage,digital_vouchers_crypto
+user_0070,pengusaha_surabaya,User #0070 (Surabaya),surabaya,Surabaya,-7.24829,112.77326,dev_trusted_0070,ip_home_0035,777204,617135,65000000,1216,electronics_gadgets,p2p_cash_transfer
+user_0071,freelancer_bali,User #0071 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66468,115.21846,dev_trusted_0071,ip_home_0035,218515,121869,24000000,476,food_beverage,electronics_gadgets
+user_0072,karyawan_jakarta,User #0072 (Jakarta),jakarta,Jakarta,-6.21261,106.85518,dev_trusted_0072,ip_home_0036,143746,71503,18500000,628,food_beverage,groceries_retail
+user_0073,mahasiswa_bandung,User #0073 (Bandung),bandung,Bandung,-6.88046,107.60051,dev_trusted_0073,ip_home_0036,48216,36062,4200000,355,food_beverage,digital_vouchers_crypto
+user_0074,pengusaha_surabaya,User #0074 (Surabaya),surabaya,Surabaya,-7.25721,112.78532,dev_trusted_0074,ip_home_0037,959241,619450,65000000,1169,electronics_gadgets,p2p_cash_transfer
+user_0075,freelancer_bali,User #0075 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.61231,115.20747,dev_trusted_0075,ip_home_0037,146889,173689,24000000,448,food_beverage,electronics_gadgets
+user_0076,karyawan_jakarta,User #0076 (Jakarta),jakarta,Jakarta,-6.2061,106.87834,dev_trusted_0076,ip_home_0038,94957,69041,18500000,495,food_beverage,groceries_retail
+user_0077,mahasiswa_bandung,User #0077 (Bandung),bandung,Bandung,-6.93735,107.63009,dev_trusted_0077,ip_home_0038,59324,36450,4200000,152,food_beverage,digital_vouchers_crypto
+user_0078,pengusaha_surabaya,User #0078 (Surabaya),surabaya,Surabaya,-7.31525,112.75346,dev_trusted_0078,ip_home_0039,789848,587899,65000000,1183,electronics_gadgets,p2p_cash_transfer
+user_0079,freelancer_bali,User #0079 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66704,115.2316,dev_trusted_0079,ip_home_0039,217220,151131,24000000,426,food_beverage,electronics_gadgets
+user_0080,karyawan_jakarta,User #0080 (Jakarta),jakarta,Jakarta,-6.21329,106.85052,dev_trusted_0080,ip_home_0040,140384,79979,18500000,686,food_beverage,groceries_retail
+user_0081,mahasiswa_bandung,User #0081 (Bandung),bandung,Bandung,-6.92415,107.61616,dev_trusted_0081,ip_home_0040,61843,24536,4200000,163,food_beverage,digital_vouchers_crypto
+user_0082,pengusaha_surabaya,User #0082 (Surabaya),surabaya,Surabaya,-7.29455,112.69376,dev_trusted_0082,ip_home_0041,763521,611828,65000000,1094,electronics_gadgets,p2p_cash_transfer
+user_0083,freelancer_bali,User #0083 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66556,115.23983,dev_trusted_0083,ip_home_0041,251822,138548,24000000,611,food_beverage,electronics_gadgets
+user_0084,karyawan_jakarta,User #0084 (Jakarta),jakarta,Jakarta,-6.2065,106.82467,dev_trusted_0084,ip_home_0042,113854,66123,18500000,560,food_beverage,groceries_retail
+user_0085,mahasiswa_bandung,User #0085 (Bandung),bandung,Bandung,-6.92645,107.63919,dev_trusted_0085,ip_home_0042,69196,27743,4200000,315,food_beverage,digital_vouchers_crypto
+user_0086,pengusaha_surabaya,User #0086 (Surabaya),surabaya,Surabaya,-7.28351,112.76397,dev_trusted_0086,ip_home_0043,833286,398950,65000000,1203,electronics_gadgets,p2p_cash_transfer
+user_0087,freelancer_bali,User #0087 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.68563,115.19925,dev_trusted_0087,ip_home_0043,176302,126260,24000000,528,food_beverage,electronics_gadgets
+user_0088,karyawan_jakarta,User #0088 (Jakarta),jakarta,Jakarta,-6.21353,106.85382,dev_trusted_0088,ip_home_0044,131786,101838,18500000,609,food_beverage,groceries_retail
+user_0089,mahasiswa_bandung,User #0089 (Bandung),bandung,Bandung,-6.95442,107.64578,dev_trusted_0089,ip_home_0044,52265,40851,4200000,314,food_beverage,digital_vouchers_crypto
+user_0090,pengusaha_surabaya,User #0090 (Surabaya),surabaya,Surabaya,-7.26078,112.76082,dev_trusted_0090,ip_home_0045,1098754,721350,65000000,1126,electronics_gadgets,p2p_cash_transfer
+user_0091,freelancer_bali,User #0091 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.6665,115.23951,dev_trusted_0091,ip_home_0045,183361,146994,24000000,487,food_beverage,electronics_gadgets
+user_0092,karyawan_jakarta,User #0092 (Jakarta),jakarta,Jakarta,-6.20095,106.82477,dev_trusted_0092,ip_home_0046,95195,58569,18500000,539,food_beverage,groceries_retail
+user_0093,mahasiswa_bandung,User #0093 (Bandung),bandung,Bandung,-6.92897,107.61177,dev_trusted_0093,ip_home_0046,70982,40806,4200000,193,food_beverage,digital_vouchers_crypto
+user_0094,pengusaha_surabaya,User #0094 (Surabaya),surabaya,Surabaya,-7.24881,112.74192,dev_trusted_0094,ip_home_0047,813743,565289,65000000,1175,electronics_gadgets,p2p_cash_transfer
+user_0095,freelancer_bali,User #0095 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.67898,115.2392,dev_trusted_0095,ip_home_0047,174028,140133,24000000,723,food_beverage,electronics_gadgets
+user_0096,karyawan_jakarta,User #0096 (Jakarta),jakarta,Jakarta,-6.20322,106.88143,dev_trusted_0096,ip_home_0048,126716,92404,18500000,634,food_beverage,groceries_retail
+user_0097,mahasiswa_bandung,User #0097 (Bandung),bandung,Bandung,-6.92176,107.59961,dev_trusted_0097,ip_home_0048,58549,30529,4200000,339,food_beverage,digital_vouchers_crypto
+user_0098,pengusaha_surabaya,User #0098 (Surabaya),surabaya,Surabaya,-7.23037,112.76126,dev_trusted_0098,ip_home_0049,813503,587452,65000000,1092,electronics_gadgets,p2p_cash_transfer
+user_0099,freelancer_bali,User #0099 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.64711,115.16681,dev_trusted_0099,ip_home_0049,199428,98192,24000000,355,food_beverage,electronics_gadgets
+user_0100,karyawan_jakarta,User #0100 (Jakarta),jakarta,Jakarta,-6.1747,106.86798,dev_trusted_0100,ip_home_0050,111509,65843,18500000,373,food_beverage,groceries_retail
+user_0101,mahasiswa_bandung,User #0101 (Bandung),bandung,Bandung,-6.93109,107.67961,dev_trusted_0101,ip_home_0050,58587,32062,4200000,321,food_beverage,digital_vouchers_crypto
+user_0102,pengusaha_surabaya,User #0102 (Surabaya),surabaya,Surabaya,-7.29652,112.74467,dev_trusted_0102,ip_home_0051,862683,542896,65000000,1191,electronics_gadgets,p2p_cash_transfer
+user_0103,freelancer_bali,User #0103 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66188,115.22931,dev_trusted_0103,ip_home_0051,188316,158854,24000000,636,food_beverage,electronics_gadgets
+user_0104,karyawan_jakarta,User #0104 (Jakarta),jakarta,Jakarta,-6.23305,106.82341,dev_trusted_0104,ip_home_0052,150045,82560,18500000,766,food_beverage,groceries_retail
+user_0105,mahasiswa_bandung,User #0105 (Bandung),bandung,Bandung,-6.92856,107.65548,dev_trusted_0105,ip_home_0052,56084,36355,4200000,420,food_beverage,digital_vouchers_crypto
+user_0106,pengusaha_surabaya,User #0106 (Surabaya),surabaya,Surabaya,-7.26654,112.72857,dev_trusted_0106,ip_home_0053,792808,587317,65000000,979,electronics_gadgets,p2p_cash_transfer
+user_0107,freelancer_bali,User #0107 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.65456,115.19913,dev_trusted_0107,ip_home_0053,246156,89720,24000000,419,food_beverage,electronics_gadgets
+user_0108,karyawan_jakarta,User #0108 (Jakarta),jakarta,Jakarta,-6.25096,106.82494,dev_trusted_0108,ip_home_0054,129643,82714,18500000,617,food_beverage,groceries_retail
+user_0109,mahasiswa_bandung,User #0109 (Bandung),bandung,Bandung,-6.92148,107.62418,dev_trusted_0109,ip_home_0054,46679,38710,4200000,339,food_beverage,digital_vouchers_crypto
+user_0110,pengusaha_surabaya,User #0110 (Surabaya),surabaya,Surabaya,-7.24787,112.76601,dev_trusted_0110,ip_home_0055,887793,717893,65000000,1112,electronics_gadgets,p2p_cash_transfer
+user_0111,freelancer_bali,User #0111 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.67818,115.19376,dev_trusted_0111,ip_home_0055,177483,113866,24000000,410,food_beverage,electronics_gadgets
+user_0112,karyawan_jakarta,User #0112 (Jakarta),jakarta,Jakarta,-6.21057,106.85396,dev_trusted_0112,ip_home_0056,125958,75239,18500000,721,food_beverage,groceries_retail
+user_0113,mahasiswa_bandung,User #0113 (Bandung),bandung,Bandung,-6.89901,107.61511,dev_trusted_0113,ip_home_0056,49613,37879,4200000,296,food_beverage,digital_vouchers_crypto
+user_0114,pengusaha_surabaya,User #0114 (Surabaya),surabaya,Surabaya,-7.2937,112.7504,dev_trusted_0114,ip_home_0057,883409,475775,65000000,1137,electronics_gadgets,p2p_cash_transfer
+user_0115,freelancer_bali,User #0115 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.70687,115.246,dev_trusted_0115,ip_home_0057,249310,134697,24000000,522,food_beverage,electronics_gadgets
+user_0116,karyawan_jakarta,User #0116 (Jakarta),jakarta,Jakarta,-6.26905,106.81669,dev_trusted_0116,ip_home_0058,119491,71330,18500000,704,food_beverage,groceries_retail
+user_0117,mahasiswa_bandung,User #0117 (Bandung),bandung,Bandung,-6.86757,107.58968,dev_trusted_0117,ip_home_0058,48090,36236,4200000,425,food_beverage,digital_vouchers_crypto
+user_0118,pengusaha_surabaya,User #0118 (Surabaya),surabaya,Surabaya,-7.28806,112.75833,dev_trusted_0118,ip_home_0059,1082215,413729,65000000,1004,electronics_gadgets,p2p_cash_transfer
+user_0119,freelancer_bali,User #0119 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.68109,115.19959,dev_trusted_0119,ip_home_0059,235596,145074,24000000,330,food_beverage,electronics_gadgets
+user_0120,karyawan_jakarta,User #0120 (Jakarta),jakarta,Jakarta,-6.19591,106.83116,dev_trusted_0120,ip_home_0060,148895,76998,18500000,582,food_beverage,groceries_retail
+user_0121,mahasiswa_bandung,User #0121 (Bandung),bandung,Bandung,-6.90397,107.63817,dev_trusted_0121,ip_home_0060,58696,26150,4200000,328,food_beverage,digital_vouchers_crypto
+user_0122,pengusaha_surabaya,User #0122 (Surabaya),surabaya,Surabaya,-7.28336,112.75798,dev_trusted_0122,ip_home_0061,668473,586821,65000000,1047,electronics_gadgets,p2p_cash_transfer
+user_0123,freelancer_bali,User #0123 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.70257,115.23045,dev_trusted_0123,ip_home_0061,217611,127106,24000000,620,food_beverage,electronics_gadgets
+user_0124,karyawan_jakarta,User #0124 (Jakarta),jakarta,Jakarta,-6.21982,106.8464,dev_trusted_0124,ip_home_0062,130042,77099,18500000,682,food_beverage,groceries_retail
+user_0125,mahasiswa_bandung,User #0125 (Bandung),bandung,Bandung,-6.93084,107.60881,dev_trusted_0125,ip_home_0062,66241,29536,4200000,62,food_beverage,digital_vouchers_crypto
+user_0126,pengusaha_surabaya,User #0126 (Surabaya),surabaya,Surabaya,-7.21723,112.81583,dev_trusted_0126,ip_home_0063,798328,390210,65000000,1092,electronics_gadgets,p2p_cash_transfer
+user_0127,freelancer_bali,User #0127 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.67766,115.20785,dev_trusted_0127,ip_home_0063,174928,152170,24000000,537,food_beverage,electronics_gadgets
+user_0128,karyawan_jakarta,User #0128 (Jakarta),jakarta,Jakarta,-6.24616,106.86308,dev_trusted_0128,ip_home_0064,163487,87192,18500000,609,food_beverage,groceries_retail
+user_0129,mahasiswa_bandung,User #0129 (Bandung),bandung,Bandung,-6.92105,107.63448,dev_trusted_0129,ip_home_0064,40721,35863,4200000,244,food_beverage,digital_vouchers_crypto
+user_0130,pengusaha_surabaya,User #0130 (Surabaya),surabaya,Surabaya,-7.2113,112.74775,dev_trusted_0130,ip_home_0065,1062655,458941,65000000,1172,electronics_gadgets,p2p_cash_transfer
+user_0131,freelancer_bali,User #0131 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66251,115.19087,dev_trusted_0131,ip_home_0065,215587,165462,24000000,460,food_beverage,electronics_gadgets
+user_0132,karyawan_jakarta,User #0132 (Jakarta),jakarta,Jakarta,-6.2511,106.84516,dev_trusted_0132,ip_home_0066,108079,80635,18500000,632,food_beverage,groceries_retail
+user_0133,mahasiswa_bandung,User #0133 (Bandung),bandung,Bandung,-6.96014,107.57871,dev_trusted_0133,ip_home_0066,58977,32255,4200000,49,food_beverage,digital_vouchers_crypto
+user_0134,pengusaha_surabaya,User #0134 (Surabaya),surabaya,Surabaya,-7.23788,112.75891,dev_trusted_0134,ip_home_0067,758980,441361,65000000,1195,electronics_gadgets,p2p_cash_transfer
+user_0135,freelancer_bali,User #0135 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66177,115.27217,dev_trusted_0135,ip_home_0067,223235,148141,24000000,474,food_beverage,electronics_gadgets
+user_0136,karyawan_jakarta,User #0136 (Jakarta),jakarta,Jakarta,-6.18838,106.86123,dev_trusted_0136,ip_home_0068,148469,78353,18500000,600,food_beverage,groceries_retail
+user_0137,mahasiswa_bandung,User #0137 (Bandung),bandung,Bandung,-6.92948,107.63887,dev_trusted_0137,ip_home_0068,67361,32591,4200000,241,food_beverage,digital_vouchers_crypto
+user_0138,pengusaha_surabaya,User #0138 (Surabaya),surabaya,Surabaya,-7.24965,112.74596,dev_trusted_0138,ip_home_0069,971386,364228,65000000,1045,electronics_gadgets,p2p_cash_transfer
+user_0139,freelancer_bali,User #0139 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.69006,115.15459,dev_trusted_0139,ip_home_0069,179645,120781,24000000,471,food_beverage,electronics_gadgets
+user_0140,karyawan_jakarta,User #0140 (Jakarta),jakarta,Jakarta,-6.18098,106.83947,dev_trusted_0140,ip_home_0070,105672,84273,18500000,734,food_beverage,groceries_retail
+user_0141,mahasiswa_bandung,User #0141 (Bandung),bandung,Bandung,-6.9419,107.59634,dev_trusted_0141,ip_home_0070,59608,33836,4200000,338,food_beverage,digital_vouchers_crypto
+user_0142,pengusaha_surabaya,User #0142 (Surabaya),surabaya,Surabaya,-7.25784,112.76964,dev_trusted_0142,ip_home_0071,718027,549003,65000000,1101,electronics_gadgets,p2p_cash_transfer
+user_0143,freelancer_bali,User #0143 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.7009,115.17351,dev_trusted_0143,ip_home_0071,231601,132629,24000000,397,food_beverage,electronics_gadgets
+user_0144,karyawan_jakarta,User #0144 (Jakarta),jakarta,Jakarta,-6.2112,106.8738,dev_trusted_0144,ip_home_0072,82236,65917,18500000,556,food_beverage,groceries_retail
+user_0145,mahasiswa_bandung,User #0145 (Bandung),bandung,Bandung,-6.88097,107.62616,dev_trusted_0145,ip_home_0072,61330,29014,4200000,179,food_beverage,digital_vouchers_crypto
+user_0146,pengusaha_surabaya,User #0146 (Surabaya),surabaya,Surabaya,-7.2463,112.75356,dev_trusted_0146,ip_home_0073,919964,534517,65000000,1145,electronics_gadgets,p2p_cash_transfer
+user_0147,freelancer_bali,User #0147 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66655,115.23204,dev_trusted_0147,ip_home_0073,235420,105982,24000000,287,food_beverage,electronics_gadgets
+user_0148,karyawan_jakarta,User #0148 (Jakarta),jakarta,Jakarta,-6.18376,106.87529,dev_trusted_0148,ip_home_0074,105863,61287,18500000,648,food_beverage,groceries_retail
+user_0149,mahasiswa_bandung,User #0149 (Bandung),bandung,Bandung,-6.89423,107.66404,dev_trusted_0149,ip_home_0074,59259,33048,4200000,199,food_beverage,digital_vouchers_crypto
+user_0150,pengusaha_surabaya,User #0150 (Surabaya),surabaya,Surabaya,-7.25721,112.74462,dev_trusted_0150,ip_home_0075,720578,719022,65000000,1280,electronics_gadgets,p2p_cash_transfer
+user_0151,freelancer_bali,User #0151 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.6421,115.18958,dev_trusted_0151,ip_home_0075,236933,153432,24000000,529,food_beverage,electronics_gadgets
+user_0152,karyawan_jakarta,User #0152 (Jakarta),jakarta,Jakarta,-6.17756,106.86148,dev_trusted_0152,ip_home_0076,138875,93120,18500000,670,food_beverage,groceries_retail
+user_0153,mahasiswa_bandung,User #0153 (Bandung),bandung,Bandung,-6.96209,107.62119,dev_trusted_0153,ip_home_0076,50411,28280,4200000,431,food_beverage,digital_vouchers_crypto
+user_0154,pengusaha_surabaya,User #0154 (Surabaya),surabaya,Surabaya,-7.21428,112.78608,dev_trusted_0154,ip_home_0077,882539,661426,65000000,1121,electronics_gadgets,p2p_cash_transfer
+user_0155,freelancer_bali,User #0155 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66543,115.18526,dev_trusted_0155,ip_home_0077,222505,141268,24000000,372,food_beverage,electronics_gadgets
+user_0156,karyawan_jakarta,User #0156 (Jakarta),jakarta,Jakarta,-6.21008,106.84361,dev_trusted_0156,ip_home_0078,158704,96401,18500000,641,food_beverage,groceries_retail
+user_0157,mahasiswa_bandung,User #0157 (Bandung),bandung,Bandung,-6.91128,107.62021,dev_trusted_0157,ip_home_0078,53325,29317,4200000,266,food_beverage,digital_vouchers_crypto
+user_0158,pengusaha_surabaya,User #0158 (Surabaya),surabaya,Surabaya,-7.27615,112.72084,dev_trusted_0158,ip_home_0079,915180,582279,65000000,959,electronics_gadgets,p2p_cash_transfer
+user_0159,freelancer_bali,User #0159 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.67357,115.23749,dev_trusted_0159,ip_home_0079,243365,161542,24000000,493,food_beverage,electronics_gadgets
+user_0160,karyawan_jakarta,User #0160 (Jakarta),jakarta,Jakarta,-6.22993,106.81851,dev_trusted_0160,ip_home_0080,131461,89835,18500000,755,food_beverage,groceries_retail
+user_0161,mahasiswa_bandung,User #0161 (Bandung),bandung,Bandung,-6.89,107.61579,dev_trusted_0161,ip_home_0080,44735,33324,4200000,299,food_beverage,digital_vouchers_crypto
+user_0162,pengusaha_surabaya,User #0162 (Surabaya),surabaya,Surabaya,-7.26255,112.73765,dev_trusted_0162,ip_home_0081,882242,508423,65000000,1063,electronics_gadgets,p2p_cash_transfer
+user_0163,freelancer_bali,User #0163 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66271,115.20255,dev_trusted_0163,ip_home_0081,217689,145737,24000000,387,food_beverage,electronics_gadgets
+user_0164,karyawan_jakarta,User #0164 (Jakarta),jakarta,Jakarta,-6.22083,106.88154,dev_trusted_0164,ip_home_0082,103211,58012,18500000,472,food_beverage,groceries_retail
+user_0165,mahasiswa_bandung,User #0165 (Bandung),bandung,Bandung,-6.91677,107.61987,dev_trusted_0165,ip_home_0082,54029,41374,4200000,39,food_beverage,digital_vouchers_crypto
+user_0166,pengusaha_surabaya,User #0166 (Surabaya),surabaya,Surabaya,-7.2476,112.79114,dev_trusted_0166,ip_home_0083,706207,518665,65000000,1052,electronics_gadgets,p2p_cash_transfer
+user_0167,freelancer_bali,User #0167 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.69286,115.20444,dev_trusted_0167,ip_home_0083,254965,178585,24000000,459,food_beverage,electronics_gadgets
+user_0168,karyawan_jakarta,User #0168 (Jakarta),jakarta,Jakarta,-6.16117,106.84649,dev_trusted_0168,ip_home_0084,157881,83810,18500000,651,food_beverage,groceries_retail
+user_0169,mahasiswa_bandung,User #0169 (Bandung),bandung,Bandung,-6.90836,107.69857,dev_trusted_0169,ip_home_0084,62023,31286,4200000,367,food_beverage,digital_vouchers_crypto
+user_0170,pengusaha_surabaya,User #0170 (Surabaya),surabaya,Surabaya,-7.26655,112.73986,dev_trusted_0170,ip_home_0085,965846,552564,65000000,1145,electronics_gadgets,p2p_cash_transfer
+user_0171,freelancer_bali,User #0171 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.67015,115.22101,dev_trusted_0171,ip_home_0085,223386,99323,24000000,549,food_beverage,electronics_gadgets
+user_0172,karyawan_jakarta,User #0172 (Jakarta),jakarta,Jakarta,-6.23335,106.80954,dev_trusted_0172,ip_home_0086,123904,86070,18500000,577,food_beverage,groceries_retail
+user_0173,mahasiswa_bandung,User #0173 (Bandung),bandung,Bandung,-6.89672,107.58555,dev_trusted_0173,ip_home_0086,51642,31929,4200000,275,food_beverage,digital_vouchers_crypto
+user_0174,pengusaha_surabaya,User #0174 (Surabaya),surabaya,Surabaya,-7.25053,112.7269,dev_trusted_0174,ip_home_0087,942346,555197,65000000,949,electronics_gadgets,p2p_cash_transfer
+user_0175,freelancer_bali,User #0175 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.71946,115.21229,dev_trusted_0175,ip_home_0087,203039,137828,24000000,487,food_beverage,electronics_gadgets
+user_0176,karyawan_jakarta,User #0176 (Jakarta),jakarta,Jakarta,-6.20316,106.86929,dev_trusted_0176,ip_home_0088,104166,70057,18500000,541,food_beverage,groceries_retail
+user_0177,mahasiswa_bandung,User #0177 (Bandung),bandung,Bandung,-6.91028,107.65022,dev_trusted_0177,ip_home_0088,51441,21866,4200000,126,food_beverage,digital_vouchers_crypto
+user_0178,pengusaha_surabaya,User #0178 (Surabaya),surabaya,Surabaya,-7.27833,112.73816,dev_trusted_0178,ip_home_0089,797930,553182,65000000,1091,electronics_gadgets,p2p_cash_transfer
+user_0179,freelancer_bali,User #0179 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.64427,115.1957,dev_trusted_0179,ip_home_0089,182836,150056,24000000,351,food_beverage,electronics_gadgets
+user_0180,karyawan_jakarta,User #0180 (Jakarta),jakarta,Jakarta,-6.19906,106.84816,dev_trusted_0180,ip_home_0090,122235,105250,18500000,584,food_beverage,groceries_retail
+user_0181,mahasiswa_bandung,User #0181 (Bandung),bandung,Bandung,-6.86599,107.61346,dev_trusted_0181,ip_home_0090,44464,35367,4200000,183,food_beverage,digital_vouchers_crypto
+user_0182,pengusaha_surabaya,User #0182 (Surabaya),surabaya,Surabaya,-7.27629,112.76203,dev_trusted_0182,ip_home_0091,920836,498671,65000000,1208,electronics_gadgets,p2p_cash_transfer
+user_0183,freelancer_bali,User #0183 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.64156,115.24851,dev_trusted_0183,ip_home_0091,226676,168632,24000000,320,food_beverage,electronics_gadgets
+user_0184,karyawan_jakarta,User #0184 (Jakarta),jakarta,Jakarta,-6.21675,106.82392,dev_trusted_0184,ip_home_0092,127235,77714,18500000,625,food_beverage,groceries_retail
+user_0185,mahasiswa_bandung,User #0185 (Bandung),bandung,Bandung,-6.87045,107.61486,dev_trusted_0185,ip_home_0092,58413,33780,4200000,286,food_beverage,digital_vouchers_crypto
+user_0186,pengusaha_surabaya,User #0186 (Surabaya),surabaya,Surabaya,-7.25735,112.76331,dev_trusted_0186,ip_home_0093,998576,685910,65000000,1147,electronics_gadgets,p2p_cash_transfer
+user_0187,freelancer_bali,User #0187 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.65576,115.18383,dev_trusted_0187,ip_home_0093,207231,159746,24000000,567,food_beverage,electronics_gadgets
+user_0188,karyawan_jakarta,User #0188 (Jakarta),jakarta,Jakarta,-6.20351,106.86776,dev_trusted_0188,ip_home_0094,134201,100303,18500000,666,food_beverage,groceries_retail
+user_0189,mahasiswa_bandung,User #0189 (Bandung),bandung,Bandung,-6.92639,107.6275,dev_trusted_0189,ip_home_0094,30822,37010,4200000,14,food_beverage,digital_vouchers_crypto
+user_0190,pengusaha_surabaya,User #0190 (Surabaya),surabaya,Surabaya,-7.30059,112.76339,dev_trusted_0190,ip_home_0095,910884,454099,65000000,1055,electronics_gadgets,p2p_cash_transfer
+user_0191,freelancer_bali,User #0191 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.63624,115.2005,dev_trusted_0191,ip_home_0095,280651,139959,24000000,526,food_beverage,electronics_gadgets
+user_0192,karyawan_jakarta,User #0192 (Jakarta),jakarta,Jakarta,-6.16838,106.84888,dev_trusted_0192,ip_home_0096,106206,83600,18500000,636,food_beverage,groceries_retail
+user_0193,mahasiswa_bandung,User #0193 (Bandung),bandung,Bandung,-6.95162,107.6127,dev_trusted_0193,ip_home_0096,48876,39852,4200000,283,food_beverage,digital_vouchers_crypto
+user_0194,pengusaha_surabaya,User #0194 (Surabaya),surabaya,Surabaya,-7.26457,112.74945,dev_trusted_0194,ip_home_0097,878448,600887,65000000,1030,electronics_gadgets,p2p_cash_transfer
+user_0195,freelancer_bali,User #0195 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.69654,115.24022,dev_trusted_0195,ip_home_0097,197011,110246,24000000,529,food_beverage,electronics_gadgets
+user_0196,karyawan_jakarta,User #0196 (Jakarta),jakarta,Jakarta,-6.19722,106.80733,dev_trusted_0196,ip_home_0098,129302,94378,18500000,673,food_beverage,groceries_retail
+user_0197,mahasiswa_bandung,User #0197 (Bandung),bandung,Bandung,-6.9017,107.58399,dev_trusted_0197,ip_home_0098,57731,33411,4200000,236,food_beverage,digital_vouchers_crypto
+user_0198,pengusaha_surabaya,User #0198 (Surabaya),surabaya,Surabaya,-7.23574,112.78908,dev_trusted_0198,ip_home_0099,1078782,658471,65000000,1110,electronics_gadgets,p2p_cash_transfer
+user_0199,freelancer_bali,User #0199 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66168,115.23177,dev_trusted_0199,ip_home_0099,213817,142746,24000000,564,food_beverage,electronics_gadgets
+user_0200,karyawan_jakarta,User #0200 (Jakarta),jakarta,Jakarta,-6.21028,106.82737,dev_trusted_0200,ip_home_0100,117228,93082,18500000,640,food_beverage,groceries_retail
+user_0201,mahasiswa_bandung,User #0201 (Bandung),bandung,Bandung,-6.90899,107.63585,dev_trusted_0201,ip_home_0100,51907,38970,4200000,314,food_beverage,digital_vouchers_crypto
+user_0202,pengusaha_surabaya,User #0202 (Surabaya),surabaya,Surabaya,-7.28837,112.78816,dev_trusted_0202,ip_home_0101,786155,413454,65000000,1025,electronics_gadgets,p2p_cash_transfer
+user_0203,freelancer_bali,User #0203 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.69603,115.2139,dev_trusted_0203,ip_home_0101,201373,132926,24000000,545,food_beverage,electronics_gadgets
+user_0204,karyawan_jakarta,User #0204 (Jakarta),jakarta,Jakarta,-6.2003,106.8535,dev_trusted_0204,ip_home_0102,132684,92855,18500000,450,food_beverage,groceries_retail
+user_0205,mahasiswa_bandung,User #0205 (Bandung),bandung,Bandung,-6.92661,107.56459,dev_trusted_0205,ip_home_0102,55297,34975,4200000,374,food_beverage,digital_vouchers_crypto
+user_0206,pengusaha_surabaya,User #0206 (Surabaya),surabaya,Surabaya,-7.22781,112.75717,dev_trusted_0206,ip_home_0103,786203,590025,65000000,1072,electronics_gadgets,p2p_cash_transfer
+user_0207,freelancer_bali,User #0207 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.67053,115.23725,dev_trusted_0207,ip_home_0103,192430,156919,24000000,550,food_beverage,electronics_gadgets
+user_0208,karyawan_jakarta,User #0208 (Jakarta),jakarta,Jakarta,-6.23267,106.86995,dev_trusted_0208,ip_home_0104,138098,86299,18500000,571,food_beverage,groceries_retail
+user_0209,mahasiswa_bandung,User #0209 (Bandung),bandung,Bandung,-6.93898,107.60566,dev_trusted_0209,ip_home_0104,59476,29982,4200000,319,food_beverage,digital_vouchers_crypto
+user_0210,pengusaha_surabaya,User #0210 (Surabaya),surabaya,Surabaya,-7.28854,112.747,dev_trusted_0210,ip_home_0105,863980,751723,65000000,996,electronics_gadgets,p2p_cash_transfer
+user_0211,freelancer_bali,User #0211 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.6337,115.21635,dev_trusted_0211,ip_home_0105,222951,142485,24000000,530,food_beverage,electronics_gadgets
+user_0212,karyawan_jakarta,User #0212 (Jakarta),jakarta,Jakarta,-6.21264,106.88195,dev_trusted_0212,ip_home_0106,116441,99435,18500000,582,food_beverage,groceries_retail
+user_0213,mahasiswa_bandung,User #0213 (Bandung),bandung,Bandung,-6.91901,107.5923,dev_trusted_0213,ip_home_0106,58753,42586,4200000,273,food_beverage,digital_vouchers_crypto
+user_0214,pengusaha_surabaya,User #0214 (Surabaya),surabaya,Surabaya,-7.26242,112.72423,dev_trusted_0214,ip_home_0107,820765,418594,65000000,1037,electronics_gadgets,p2p_cash_transfer
+user_0215,freelancer_bali,User #0215 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66483,115.24558,dev_trusted_0215,ip_home_0107,298490,127681,24000000,619,food_beverage,electronics_gadgets
+user_0216,karyawan_jakarta,User #0216 (Jakarta),jakarta,Jakarta,-6.20271,106.84182,dev_trusted_0216,ip_home_0108,133111,85789,18500000,649,food_beverage,groceries_retail
+user_0217,mahasiswa_bandung,User #0217 (Bandung),bandung,Bandung,-6.92771,107.58415,dev_trusted_0217,ip_home_0108,42265,38429,4200000,255,food_beverage,digital_vouchers_crypto
+user_0218,pengusaha_surabaya,User #0218 (Surabaya),surabaya,Surabaya,-7.2724,112.75231,dev_trusted_0218,ip_home_0109,951353,564880,65000000,1060,electronics_gadgets,p2p_cash_transfer
+user_0219,freelancer_bali,User #0219 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.63984,115.25208,dev_trusted_0219,ip_home_0109,225578,160446,24000000,601,food_beverage,electronics_gadgets
+user_0220,karyawan_jakarta,User #0220 (Jakarta),jakarta,Jakarta,-6.18055,106.86095,dev_trusted_0220,ip_home_0110,136219,91625,18500000,541,food_beverage,groceries_retail
+user_0221,mahasiswa_bandung,User #0221 (Bandung),bandung,Bandung,-6.89998,107.5852,dev_trusted_0221,ip_home_0110,48444,41843,4200000,355,food_beverage,digital_vouchers_crypto
+user_0222,pengusaha_surabaya,User #0222 (Surabaya),surabaya,Surabaya,-7.22032,112.74531,dev_trusted_0222,ip_home_0111,703088,530163,65000000,1129,electronics_gadgets,p2p_cash_transfer
+user_0223,freelancer_bali,User #0223 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66853,115.24094,dev_trusted_0223,ip_home_0111,198619,147392,24000000,401,food_beverage,electronics_gadgets
+user_0224,karyawan_jakarta,User #0224 (Jakarta),jakarta,Jakarta,-6.19754,106.84568,dev_trusted_0224,ip_home_0112,110940,81993,18500000,623,food_beverage,groceries_retail
+user_0225,mahasiswa_bandung,User #0225 (Bandung),bandung,Bandung,-6.92425,107.66338,dev_trusted_0225,ip_home_0112,54187,33719,4200000,91,food_beverage,digital_vouchers_crypto
+user_0226,pengusaha_surabaya,User #0226 (Surabaya),surabaya,Surabaya,-7.27986,112.74552,dev_trusted_0226,ip_home_0113,762553,663990,65000000,1105,electronics_gadgets,p2p_cash_transfer
+user_0227,freelancer_bali,User #0227 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.63829,115.21414,dev_trusted_0227,ip_home_0113,211172,138135,24000000,490,food_beverage,electronics_gadgets
+user_0228,karyawan_jakarta,User #0228 (Jakarta),jakarta,Jakarta,-6.16583,106.78761,dev_trusted_0228,ip_home_0114,87471,78074,18500000,641,food_beverage,groceries_retail
+user_0229,mahasiswa_bandung,User #0229 (Bandung),bandung,Bandung,-6.90025,107.63093,dev_trusted_0229,ip_home_0114,51829,40349,4200000,372,food_beverage,digital_vouchers_crypto
+user_0230,pengusaha_surabaya,User #0230 (Surabaya),surabaya,Surabaya,-7.2529,112.77617,dev_trusted_0230,ip_home_0115,884762,503677,65000000,1182,electronics_gadgets,p2p_cash_transfer
+user_0231,freelancer_bali,User #0231 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66773,115.21263,dev_trusted_0231,ip_home_0115,256398,88531,24000000,362,food_beverage,electronics_gadgets
+user_0232,karyawan_jakarta,User #0232 (Jakarta),jakarta,Jakarta,-6.23848,106.83652,dev_trusted_0232,ip_home_0116,120226,65781,18500000,551,food_beverage,groceries_retail
+user_0233,mahasiswa_bandung,User #0233 (Bandung),bandung,Bandung,-6.93902,107.68054,dev_trusted_0233,ip_home_0116,69864,32838,4200000,247,food_beverage,digital_vouchers_crypto
+user_0234,pengusaha_surabaya,User #0234 (Surabaya),surabaya,Surabaya,-7.28623,112.7044,dev_trusted_0234,ip_home_0117,835097,467677,65000000,1112,electronics_gadgets,p2p_cash_transfer
+user_0235,freelancer_bali,User #0235 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.71051,115.19355,dev_trusted_0235,ip_home_0117,214681,147690,24000000,527,food_beverage,electronics_gadgets
+user_0236,karyawan_jakarta,User #0236 (Jakarta),jakarta,Jakarta,-6.24181,106.86697,dev_trusted_0236,ip_home_0118,109996,93068,18500000,639,food_beverage,groceries_retail
+user_0237,mahasiswa_bandung,User #0237 (Bandung),bandung,Bandung,-6.95191,107.6112,dev_trusted_0237,ip_home_0118,58014,38218,4200000,267,food_beverage,digital_vouchers_crypto
+user_0238,pengusaha_surabaya,User #0238 (Surabaya),surabaya,Surabaya,-7.21921,112.77729,dev_trusted_0238,ip_home_0119,817276,611885,65000000,1294,electronics_gadgets,p2p_cash_transfer
+user_0239,freelancer_bali,User #0239 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.62149,115.1819,dev_trusted_0239,ip_home_0119,180814,171183,24000000,394,food_beverage,electronics_gadgets
+user_0240,karyawan_jakarta,User #0240 (Jakarta),jakarta,Jakarta,-6.24186,106.83345,dev_trusted_0240,ip_home_0120,132879,83694,18500000,581,food_beverage,groceries_retail
+user_0241,mahasiswa_bandung,User #0241 (Bandung),bandung,Bandung,-6.93436,107.60129,dev_trusted_0241,ip_home_0120,47744,46978,4200000,306,food_beverage,digital_vouchers_crypto
+user_0242,pengusaha_surabaya,User #0242 (Surabaya),surabaya,Surabaya,-7.23533,112.73987,dev_trusted_0242,ip_home_0121,826290,491131,65000000,881,electronics_gadgets,p2p_cash_transfer
+user_0243,freelancer_bali,User #0243 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.70495,115.16733,dev_trusted_0243,ip_home_0121,139131,114897,24000000,609,food_beverage,electronics_gadgets
+user_0244,karyawan_jakarta,User #0244 (Jakarta),jakarta,Jakarta,-6.20991,106.87786,dev_trusted_0244,ip_home_0122,132705,94977,18500000,558,food_beverage,groceries_retail
+user_0245,mahasiswa_bandung,User #0245 (Bandung),bandung,Bandung,-6.9044,107.63732,dev_trusted_0245,ip_home_0122,50242,37937,4200000,330,food_beverage,digital_vouchers_crypto
+user_0246,pengusaha_surabaya,User #0246 (Surabaya),surabaya,Surabaya,-7.27124,112.72403,dev_trusted_0246,ip_home_0123,699023,557136,65000000,1149,electronics_gadgets,p2p_cash_transfer
+user_0247,freelancer_bali,User #0247 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.69031,115.21326,dev_trusted_0247,ip_home_0123,227971,152982,24000000,629,food_beverage,electronics_gadgets
+user_0248,karyawan_jakarta,User #0248 (Jakarta),jakarta,Jakarta,-6.17688,106.82057,dev_trusted_0248,ip_home_0124,156567,78230,18500000,734,food_beverage,groceries_retail
+user_0249,mahasiswa_bandung,User #0249 (Bandung),bandung,Bandung,-6.9158,107.6088,dev_trusted_0249,ip_home_0124,40086,34099,4200000,139,food_beverage,digital_vouchers_crypto
+user_0250,pengusaha_surabaya,User #0250 (Surabaya),surabaya,Surabaya,-7.23332,112.79002,dev_trusted_0250,ip_home_0125,748393,574912,65000000,1054,electronics_gadgets,p2p_cash_transfer
+user_0251,freelancer_bali,User #0251 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.68621,115.23196,dev_trusted_0251,ip_home_0125,208786,176532,24000000,446,food_beverage,electronics_gadgets
+user_0252,karyawan_jakarta,User #0252 (Jakarta),jakarta,Jakarta,-6.18382,106.84804,dev_trusted_0252,ip_home_0126,139920,79298,18500000,635,food_beverage,groceries_retail
+user_0253,mahasiswa_bandung,User #0253 (Bandung),bandung,Bandung,-6.92039,107.5982,dev_trusted_0253,ip_home_0126,60462,38413,4200000,333,food_beverage,digital_vouchers_crypto
+user_0254,pengusaha_surabaya,User #0254 (Surabaya),surabaya,Surabaya,-7.21908,112.78833,dev_trusted_0254,ip_home_0127,802194,580776,65000000,1063,electronics_gadgets,p2p_cash_transfer
+user_0255,freelancer_bali,User #0255 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66992,115.19761,dev_trusted_0255,ip_home_0127,261032,147637,24000000,470,food_beverage,electronics_gadgets
+user_0256,karyawan_jakarta,User #0256 (Jakarta),jakarta,Jakarta,-6.17896,106.79133,dev_trusted_0256,ip_home_0128,87235,95146,18500000,645,food_beverage,groceries_retail
+user_0257,mahasiswa_bandung,User #0257 (Bandung),bandung,Bandung,-6.91124,107.58594,dev_trusted_0257,ip_home_0128,54808,45518,4200000,354,food_beverage,digital_vouchers_crypto
+user_0258,pengusaha_surabaya,User #0258 (Surabaya),surabaya,Surabaya,-7.25326,112.74112,dev_trusted_0258,ip_home_0129,799691,374341,65000000,1143,electronics_gadgets,p2p_cash_transfer
+user_0259,freelancer_bali,User #0259 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.64936,115.17321,dev_trusted_0259,ip_home_0129,189165,115693,24000000,403,food_beverage,electronics_gadgets
+user_0260,karyawan_jakarta,User #0260 (Jakarta),jakarta,Jakarta,-6.20746,106.79349,dev_trusted_0260,ip_home_0130,136517,94611,18500000,617,food_beverage,groceries_retail
+user_0261,mahasiswa_bandung,User #0261 (Bandung),bandung,Bandung,-6.97952,107.59419,dev_trusted_0261,ip_home_0130,65171,20415,4200000,248,food_beverage,digital_vouchers_crypto
+user_0262,pengusaha_surabaya,User #0262 (Surabaya),surabaya,Surabaya,-7.287,112.77221,dev_trusted_0262,ip_home_0131,763922,583326,65000000,1170,electronics_gadgets,p2p_cash_transfer
+user_0263,freelancer_bali,User #0263 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.62459,115.20753,dev_trusted_0263,ip_home_0131,221845,108813,24000000,597,food_beverage,electronics_gadgets
+user_0264,karyawan_jakarta,User #0264 (Jakarta),jakarta,Jakarta,-6.22781,106.83158,dev_trusted_0264,ip_home_0132,124582,65073,18500000,660,food_beverage,groceries_retail
+user_0265,mahasiswa_bandung,User #0265 (Bandung),bandung,Bandung,-6.89331,107.62642,dev_trusted_0265,ip_home_0132,41891,34350,4200000,346,food_beverage,digital_vouchers_crypto
+user_0266,pengusaha_surabaya,User #0266 (Surabaya),surabaya,Surabaya,-7.30445,112.72523,dev_trusted_0266,ip_home_0133,961759,572282,65000000,1157,electronics_gadgets,p2p_cash_transfer
+user_0267,freelancer_bali,User #0267 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.62401,115.22431,dev_trusted_0267,ip_home_0133,230723,196925,24000000,470,food_beverage,electronics_gadgets
+user_0268,karyawan_jakarta,User #0268 (Jakarta),jakarta,Jakarta,-6.22875,106.85629,dev_trusted_0268,ip_home_0134,133231,78284,18500000,547,food_beverage,groceries_retail
+user_0269,mahasiswa_bandung,User #0269 (Bandung),bandung,Bandung,-6.85975,107.62727,dev_trusted_0269,ip_home_0134,48958,39808,4200000,270,food_beverage,digital_vouchers_crypto
+user_0270,pengusaha_surabaya,User #0270 (Surabaya),surabaya,Surabaya,-7.26382,112.76616,dev_trusted_0270,ip_home_0135,685285,579091,65000000,1292,electronics_gadgets,p2p_cash_transfer
+user_0271,freelancer_bali,User #0271 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.65885,115.20319,dev_trusted_0271,ip_home_0135,194026,131382,24000000,467,food_beverage,electronics_gadgets
+user_0272,karyawan_jakarta,User #0272 (Jakarta),jakarta,Jakarta,-6.21825,106.86851,dev_trusted_0272,ip_home_0136,92502,95990,18500000,605,food_beverage,groceries_retail
+user_0273,mahasiswa_bandung,User #0273 (Bandung),bandung,Bandung,-6.90808,107.59093,dev_trusted_0273,ip_home_0136,65961,41539,4200000,366,food_beverage,digital_vouchers_crypto
+user_0274,pengusaha_surabaya,User #0274 (Surabaya),surabaya,Surabaya,-7.29537,112.77283,dev_trusted_0274,ip_home_0137,901619,417565,65000000,1117,electronics_gadgets,p2p_cash_transfer
+user_0275,freelancer_bali,User #0275 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66139,115.2265,dev_trusted_0275,ip_home_0137,215583,146115,24000000,622,food_beverage,electronics_gadgets
+user_0276,karyawan_jakarta,User #0276 (Jakarta),jakarta,Jakarta,-6.17815,106.77392,dev_trusted_0276,ip_home_0138,119048,82900,18500000,482,food_beverage,groceries_retail
+user_0277,mahasiswa_bandung,User #0277 (Bandung),bandung,Bandung,-6.91515,107.65032,dev_trusted_0277,ip_home_0138,46035,36766,4200000,197,food_beverage,digital_vouchers_crypto
+user_0278,pengusaha_surabaya,User #0278 (Surabaya),surabaya,Surabaya,-7.2743,112.78903,dev_trusted_0278,ip_home_0139,780823,588132,65000000,951,electronics_gadgets,p2p_cash_transfer
+user_0279,freelancer_bali,User #0279 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.62394,115.22767,dev_trusted_0279,ip_home_0139,204251,152086,24000000,363,food_beverage,electronics_gadgets
+user_0280,karyawan_jakarta,User #0280 (Jakarta),jakarta,Jakarta,-6.17924,106.8375,dev_trusted_0280,ip_home_0140,121173,78731,18500000,587,food_beverage,groceries_retail
+user_0281,mahasiswa_bandung,User #0281 (Bandung),bandung,Bandung,-6.90013,107.6255,dev_trusted_0281,ip_home_0140,60376,34953,4200000,326,food_beverage,digital_vouchers_crypto
+user_0282,pengusaha_surabaya,User #0282 (Surabaya),surabaya,Surabaya,-7.26797,112.80784,dev_trusted_0282,ip_home_0141,650088,654027,65000000,1243,electronics_gadgets,p2p_cash_transfer
+user_0283,freelancer_bali,User #0283 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.6918,115.26833,dev_trusted_0283,ip_home_0141,241357,160393,24000000,492,food_beverage,electronics_gadgets
+user_0284,karyawan_jakarta,User #0284 (Jakarta),jakarta,Jakarta,-6.21423,106.84036,dev_trusted_0284,ip_home_0142,132322,102865,18500000,656,food_beverage,groceries_retail
+user_0285,mahasiswa_bandung,User #0285 (Bandung),bandung,Bandung,-6.94029,107.63971,dev_trusted_0285,ip_home_0142,62599,38436,4200000,347,food_beverage,digital_vouchers_crypto
+user_0286,pengusaha_surabaya,User #0286 (Surabaya),surabaya,Surabaya,-7.26427,112.72888,dev_trusted_0286,ip_home_0143,739305,415074,65000000,1141,electronics_gadgets,p2p_cash_transfer
+user_0287,freelancer_bali,User #0287 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.67259,115.2016,dev_trusted_0287,ip_home_0143,116898,113806,24000000,590,food_beverage,electronics_gadgets
+user_0288,karyawan_jakarta,User #0288 (Jakarta),jakarta,Jakarta,-6.22542,106.85461,dev_trusted_0288,ip_home_0144,98924,103343,18500000,627,food_beverage,groceries_retail
+user_0289,mahasiswa_bandung,User #0289 (Bandung),bandung,Bandung,-6.91025,107.67724,dev_trusted_0289,ip_home_0144,67510,33390,4200000,226,food_beverage,digital_vouchers_crypto
+user_0290,pengusaha_surabaya,User #0290 (Surabaya),surabaya,Surabaya,-7.26564,112.76485,dev_trusted_0290,ip_home_0145,836583,517392,65000000,1252,electronics_gadgets,p2p_cash_transfer
+user_0291,freelancer_bali,User #0291 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.67336,115.27009,dev_trusted_0291,ip_home_0145,212858,177491,24000000,522,food_beverage,electronics_gadgets
+user_0292,karyawan_jakarta,User #0292 (Jakarta),jakarta,Jakarta,-6.18473,106.82748,dev_trusted_0292,ip_home_0146,108992,90861,18500000,728,food_beverage,groceries_retail
+user_0293,mahasiswa_bandung,User #0293 (Bandung),bandung,Bandung,-6.91649,107.58694,dev_trusted_0293,ip_home_0146,43777,27507,4200000,120,food_beverage,digital_vouchers_crypto
+user_0294,pengusaha_surabaya,User #0294 (Surabaya),surabaya,Surabaya,-7.25476,112.78023,dev_trusted_0294,ip_home_0147,848289,363515,65000000,1102,electronics_gadgets,p2p_cash_transfer
+user_0295,freelancer_bali,User #0295 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.67457,115.265,dev_trusted_0295,ip_home_0147,164100,131795,24000000,643,food_beverage,electronics_gadgets
+user_0296,karyawan_jakarta,User #0296 (Jakarta),jakarta,Jakarta,-6.19755,106.85968,dev_trusted_0296,ip_home_0148,127148,89206,18500000,709,food_beverage,groceries_retail
+user_0297,mahasiswa_bandung,User #0297 (Bandung),bandung,Bandung,-6.93774,107.64105,dev_trusted_0297,ip_home_0148,43672,36723,4200000,296,food_beverage,digital_vouchers_crypto
+user_0298,pengusaha_surabaya,User #0298 (Surabaya),surabaya,Surabaya,-7.27291,112.75153,dev_trusted_0298,ip_home_0149,770626,461584,65000000,1088,electronics_gadgets,p2p_cash_transfer
+user_0299,freelancer_bali,User #0299 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.6981,115.22067,dev_trusted_0299,ip_home_0149,173772,154951,24000000,383,food_beverage,electronics_gadgets
+user_0300,karyawan_jakarta,User #0300 (Jakarta),jakarta,Jakarta,-6.22296,106.82998,dev_trusted_0300,ip_home_0150,149846,89211,18500000,620,food_beverage,groceries_retail
+user_0301,mahasiswa_bandung,User #0301 (Bandung),bandung,Bandung,-6.90503,107.56642,dev_trusted_0301,ip_home_0150,54644,45486,4200000,291,food_beverage,digital_vouchers_crypto
+user_0302,pengusaha_surabaya,User #0302 (Surabaya),surabaya,Surabaya,-7.2558,112.7658,dev_trusted_0302,ip_home_0151,964189,385208,65000000,968,electronics_gadgets,p2p_cash_transfer
+user_0303,freelancer_bali,User #0303 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66524,115.19473,dev_trusted_0303,ip_home_0151,251328,133381,24000000,315,food_beverage,electronics_gadgets
+user_0304,karyawan_jakarta,User #0304 (Jakarta),jakarta,Jakarta,-6.2405,106.77686,dev_trusted_0304,ip_home_0152,120610,82598,18500000,601,food_beverage,groceries_retail
+user_0305,mahasiswa_bandung,User #0305 (Bandung),bandung,Bandung,-6.89053,107.64906,dev_trusted_0305,ip_home_0152,53594,23792,4200000,335,food_beverage,digital_vouchers_crypto
+user_0306,pengusaha_surabaya,User #0306 (Surabaya),surabaya,Surabaya,-7.24362,112.75983,dev_trusted_0306,ip_home_0153,975138,453901,65000000,1300,electronics_gadgets,p2p_cash_transfer
+user_0307,freelancer_bali,User #0307 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.69449,115.23133,dev_trusted_0307,ip_home_0153,156848,120464,24000000,626,food_beverage,electronics_gadgets
+user_0308,karyawan_jakarta,User #0308 (Jakarta),jakarta,Jakarta,-6.21532,106.8666,dev_trusted_0308,ip_home_0154,129442,83661,18500000,762,food_beverage,groceries_retail
+user_0309,mahasiswa_bandung,User #0309 (Bandung),bandung,Bandung,-6.92342,107.57458,dev_trusted_0309,ip_home_0154,48373,37893,4200000,315,food_beverage,digital_vouchers_crypto
+user_0310,pengusaha_surabaya,User #0310 (Surabaya),surabaya,Surabaya,-7.29668,112.73399,dev_trusted_0310,ip_home_0155,775830,519848,65000000,996,electronics_gadgets,p2p_cash_transfer
+user_0311,freelancer_bali,User #0311 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.68621,115.19438,dev_trusted_0311,ip_home_0155,234303,156991,24000000,476,food_beverage,electronics_gadgets
+user_0312,karyawan_jakarta,User #0312 (Jakarta),jakarta,Jakarta,-6.2186,106.8491,dev_trusted_0312,ip_home_0156,109689,70377,18500000,555,food_beverage,groceries_retail
+user_0313,mahasiswa_bandung,User #0313 (Bandung),bandung,Bandung,-6.93337,107.59001,dev_trusted_0313,ip_home_0156,56336,38831,4200000,137,food_beverage,digital_vouchers_crypto
+user_0314,pengusaha_surabaya,User #0314 (Surabaya),surabaya,Surabaya,-7.25687,112.7466,dev_trusted_0314,ip_home_0157,893542,548932,65000000,989,electronics_gadgets,p2p_cash_transfer
+user_0315,freelancer_bali,User #0315 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.70206,115.21334,dev_trusted_0315,ip_home_0157,242406,93502,24000000,521,food_beverage,electronics_gadgets
+user_0316,karyawan_jakarta,User #0316 (Jakarta),jakarta,Jakarta,-6.17906,106.84177,dev_trusted_0316,ip_home_0158,135316,76035,18500000,629,food_beverage,groceries_retail
+user_0317,mahasiswa_bandung,User #0317 (Bandung),bandung,Bandung,-6.95802,107.56049,dev_trusted_0317,ip_home_0158,62777,29828,4200000,239,food_beverage,digital_vouchers_crypto
+user_0318,pengusaha_surabaya,User #0318 (Surabaya),surabaya,Surabaya,-7.29216,112.71685,dev_trusted_0318,ip_home_0159,827835,489809,65000000,1154,electronics_gadgets,p2p_cash_transfer
+user_0319,freelancer_bali,User #0319 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.65919,115.22062,dev_trusted_0319,ip_home_0159,217515,173133,24000000,393,food_beverage,electronics_gadgets
+user_0320,karyawan_jakarta,User #0320 (Jakarta),jakarta,Jakarta,-6.21017,106.87392,dev_trusted_0320,ip_home_0160,148710,66872,18500000,611,food_beverage,groceries_retail
+user_0321,mahasiswa_bandung,User #0321 (Bandung),bandung,Bandung,-6.88355,107.6318,dev_trusted_0321,ip_home_0160,56610,33857,4200000,245,food_beverage,digital_vouchers_crypto
+user_0322,pengusaha_surabaya,User #0322 (Surabaya),surabaya,Surabaya,-7.25029,112.74579,dev_trusted_0322,ip_home_0161,844571,556484,65000000,1058,electronics_gadgets,p2p_cash_transfer
+user_0323,freelancer_bali,User #0323 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.6572,115.28546,dev_trusted_0323,ip_home_0161,154024,146804,24000000,421,food_beverage,electronics_gadgets
+user_0324,karyawan_jakarta,User #0324 (Jakarta),jakarta,Jakarta,-6.19436,106.84676,dev_trusted_0324,ip_home_0162,139284,99987,18500000,657,food_beverage,groceries_retail
+user_0325,mahasiswa_bandung,User #0325 (Bandung),bandung,Bandung,-6.8892,107.56049,dev_trusted_0325,ip_home_0162,68121,36969,4200000,377,food_beverage,digital_vouchers_crypto
+user_0326,pengusaha_surabaya,User #0326 (Surabaya),surabaya,Surabaya,-7.288,112.73133,dev_trusted_0326,ip_home_0163,868607,548594,65000000,1145,electronics_gadgets,p2p_cash_transfer
+user_0327,freelancer_bali,User #0327 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.64339,115.16847,dev_trusted_0327,ip_home_0163,240675,140173,24000000,471,food_beverage,electronics_gadgets
+user_0328,karyawan_jakarta,User #0328 (Jakarta),jakarta,Jakarta,-6.24558,106.85818,dev_trusted_0328,ip_home_0164,79735,93267,18500000,505,food_beverage,groceries_retail
+user_0329,mahasiswa_bandung,User #0329 (Bandung),bandung,Bandung,-6.91616,107.61612,dev_trusted_0329,ip_home_0164,64648,34062,4200000,217,food_beverage,digital_vouchers_crypto
+user_0330,pengusaha_surabaya,User #0330 (Surabaya),surabaya,Surabaya,-7.27017,112.78392,dev_trusted_0330,ip_home_0165,918377,518185,65000000,1098,electronics_gadgets,p2p_cash_transfer
+user_0331,freelancer_bali,User #0331 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.70968,115.22231,dev_trusted_0331,ip_home_0165,154565,155787,24000000,501,food_beverage,electronics_gadgets
+user_0332,karyawan_jakarta,User #0332 (Jakarta),jakarta,Jakarta,-6.14913,106.8181,dev_trusted_0332,ip_home_0166,123075,107928,18500000,747,food_beverage,groceries_retail
+user_0333,mahasiswa_bandung,User #0333 (Bandung),bandung,Bandung,-6.93491,107.6247,dev_trusted_0333,ip_home_0166,55016,36480,4200000,217,food_beverage,digital_vouchers_crypto
+user_0334,pengusaha_surabaya,User #0334 (Surabaya),surabaya,Surabaya,-7.25973,112.71215,dev_trusted_0334,ip_home_0167,867228,587126,65000000,1099,electronics_gadgets,p2p_cash_transfer
+user_0335,freelancer_bali,User #0335 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.71088,115.23731,dev_trusted_0335,ip_home_0167,221482,124753,24000000,464,food_beverage,electronics_gadgets
+user_0336,karyawan_jakarta,User #0336 (Jakarta),jakarta,Jakarta,-6.24632,106.81996,dev_trusted_0336,ip_home_0168,114916,100662,18500000,582,food_beverage,groceries_retail
+user_0337,mahasiswa_bandung,User #0337 (Bandung),bandung,Bandung,-6.90149,107.60564,dev_trusted_0337,ip_home_0168,57045,34257,4200000,358,food_beverage,digital_vouchers_crypto
+user_0338,pengusaha_surabaya,User #0338 (Surabaya),surabaya,Surabaya,-7.27087,112.71279,dev_trusted_0338,ip_home_0169,673801,506120,65000000,1007,electronics_gadgets,p2p_cash_transfer
+user_0339,freelancer_bali,User #0339 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66024,115.20096,dev_trusted_0339,ip_home_0169,284800,103507,24000000,508,food_beverage,electronics_gadgets
+user_0340,karyawan_jakarta,User #0340 (Jakarta),jakarta,Jakarta,-6.237,106.83326,dev_trusted_0340,ip_home_0170,127651,55351,18500000,661,food_beverage,groceries_retail
+user_0341,mahasiswa_bandung,User #0341 (Bandung),bandung,Bandung,-6.86993,107.60776,dev_trusted_0341,ip_home_0170,57143,40380,4200000,265,food_beverage,digital_vouchers_crypto
+user_0342,pengusaha_surabaya,User #0342 (Surabaya),surabaya,Surabaya,-7.27202,112.69521,dev_trusted_0342,ip_home_0171,931726,540663,65000000,1028,electronics_gadgets,p2p_cash_transfer
+user_0343,freelancer_bali,User #0343 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66734,115.19801,dev_trusted_0343,ip_home_0171,193354,152732,24000000,369,food_beverage,electronics_gadgets
+user_0344,karyawan_jakarta,User #0344 (Jakarta),jakarta,Jakarta,-6.18262,106.81066,dev_trusted_0344,ip_home_0172,112574,109517,18500000,741,food_beverage,groceries_retail
+user_0345,mahasiswa_bandung,User #0345 (Bandung),bandung,Bandung,-6.91506,107.59559,dev_trusted_0345,ip_home_0172,50633,35384,4200000,283,food_beverage,digital_vouchers_crypto
+user_0346,pengusaha_surabaya,User #0346 (Surabaya),surabaya,Surabaya,-7.25977,112.75133,dev_trusted_0346,ip_home_0173,822667,431036,65000000,1073,electronics_gadgets,p2p_cash_transfer
+user_0347,freelancer_bali,User #0347 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.64763,115.17839,dev_trusted_0347,ip_home_0173,204029,122785,24000000,500,food_beverage,electronics_gadgets
+user_0348,karyawan_jakarta,User #0348 (Jakarta),jakarta,Jakarta,-6.21852,106.88253,dev_trusted_0348,ip_home_0174,134498,68274,18500000,700,food_beverage,groceries_retail
+user_0349,mahasiswa_bandung,User #0349 (Bandung),bandung,Bandung,-6.93687,107.60468,dev_trusted_0349,ip_home_0174,57589,32418,4200000,360,food_beverage,digital_vouchers_crypto
+user_0350,pengusaha_surabaya,User #0350 (Surabaya),surabaya,Surabaya,-7.27686,112.73663,dev_trusted_0350,ip_home_0175,766312,503334,65000000,1218,electronics_gadgets,p2p_cash_transfer
+user_0351,freelancer_bali,User #0351 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.65478,115.25535,dev_trusted_0351,ip_home_0175,281430,118354,24000000,496,food_beverage,electronics_gadgets
+user_0352,karyawan_jakarta,User #0352 (Jakarta),jakarta,Jakarta,-6.23821,106.82616,dev_trusted_0352,ip_home_0176,113185,71521,18500000,545,food_beverage,groceries_retail
+user_0353,mahasiswa_bandung,User #0353 (Bandung),bandung,Bandung,-6.92111,107.58868,dev_trusted_0353,ip_home_0176,61947,30181,4200000,532,food_beverage,digital_vouchers_crypto
+user_0354,pengusaha_surabaya,User #0354 (Surabaya),surabaya,Surabaya,-7.26878,112.7539,dev_trusted_0354,ip_home_0177,684843,690752,65000000,1220,electronics_gadgets,p2p_cash_transfer
+user_0355,freelancer_bali,User #0355 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66308,115.17893,dev_trusted_0355,ip_home_0177,216636,116449,24000000,621,food_beverage,electronics_gadgets
+user_0356,karyawan_jakarta,User #0356 (Jakarta),jakarta,Jakarta,-6.18857,106.84799,dev_trusted_0356,ip_home_0178,79317,72461,18500000,701,food_beverage,groceries_retail
+user_0357,mahasiswa_bandung,User #0357 (Bandung),bandung,Bandung,-6.88718,107.64683,dev_trusted_0357,ip_home_0178,41865,36583,4200000,371,food_beverage,digital_vouchers_crypto
+user_0358,pengusaha_surabaya,User #0358 (Surabaya),surabaya,Surabaya,-7.29896,112.7519,dev_trusted_0358,ip_home_0179,884914,525186,65000000,953,electronics_gadgets,p2p_cash_transfer
+user_0359,freelancer_bali,User #0359 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.67864,115.20442,dev_trusted_0359,ip_home_0179,205335,128167,24000000,450,food_beverage,electronics_gadgets
+user_0360,karyawan_jakarta,User #0360 (Jakarta),jakarta,Jakarta,-6.20979,106.85666,dev_trusted_0360,ip_home_0180,119291,79776,18500000,648,food_beverage,groceries_retail
+user_0361,mahasiswa_bandung,User #0361 (Bandung),bandung,Bandung,-6.96552,107.63103,dev_trusted_0361,ip_home_0180,54995,35208,4200000,366,food_beverage,digital_vouchers_crypto
+user_0362,pengusaha_surabaya,User #0362 (Surabaya),surabaya,Surabaya,-7.30632,112.70275,dev_trusted_0362,ip_home_0181,884909,549412,65000000,1135,electronics_gadgets,p2p_cash_transfer
+user_0363,freelancer_bali,User #0363 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.68205,115.22921,dev_trusted_0363,ip_home_0181,239378,150163,24000000,466,food_beverage,electronics_gadgets
+user_0364,karyawan_jakarta,User #0364 (Jakarta),jakarta,Jakarta,-6.26149,106.86483,dev_trusted_0364,ip_home_0182,147907,93218,18500000,560,food_beverage,groceries_retail
+user_0365,mahasiswa_bandung,User #0365 (Bandung),bandung,Bandung,-6.90066,107.64061,dev_trusted_0365,ip_home_0182,67860,30400,4200000,259,food_beverage,digital_vouchers_crypto
+user_0366,pengusaha_surabaya,User #0366 (Surabaya),surabaya,Surabaya,-7.23882,112.75354,dev_trusted_0366,ip_home_0183,707540,584205,65000000,1172,electronics_gadgets,p2p_cash_transfer
+user_0367,freelancer_bali,User #0367 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.6683,115.21809,dev_trusted_0367,ip_home_0183,201850,171043,24000000,408,food_beverage,electronics_gadgets
+user_0368,karyawan_jakarta,User #0368 (Jakarta),jakarta,Jakarta,-6.22348,106.84587,dev_trusted_0368,ip_home_0184,141480,65908,18500000,522,food_beverage,groceries_retail
+user_0369,mahasiswa_bandung,User #0369 (Bandung),bandung,Bandung,-6.96844,107.61992,dev_trusted_0369,ip_home_0184,45773,32981,4200000,339,food_beverage,digital_vouchers_crypto
+user_0370,pengusaha_surabaya,User #0370 (Surabaya),surabaya,Surabaya,-7.27354,112.75788,dev_trusted_0370,ip_home_0185,811834,605449,65000000,1162,electronics_gadgets,p2p_cash_transfer
+user_0371,freelancer_bali,User #0371 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.6878,115.20838,dev_trusted_0371,ip_home_0185,242877,148260,24000000,364,food_beverage,electronics_gadgets
+user_0372,karyawan_jakarta,User #0372 (Jakarta),jakarta,Jakarta,-6.19241,106.81848,dev_trusted_0372,ip_home_0186,151484,98057,18500000,666,food_beverage,groceries_retail
+user_0373,mahasiswa_bandung,User #0373 (Bandung),bandung,Bandung,-6.91357,107.61387,dev_trusted_0373,ip_home_0186,60597,33053,4200000,301,food_beverage,digital_vouchers_crypto
+user_0374,pengusaha_surabaya,User #0374 (Surabaya),surabaya,Surabaya,-7.2357,112.73805,dev_trusted_0374,ip_home_0187,771435,451464,65000000,1024,electronics_gadgets,p2p_cash_transfer
+user_0375,freelancer_bali,User #0375 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.71621,115.23085,dev_trusted_0375,ip_home_0187,266980,169931,24000000,343,food_beverage,electronics_gadgets
+user_0376,karyawan_jakarta,User #0376 (Jakarta),jakarta,Jakarta,-6.19068,106.88115,dev_trusted_0376,ip_home_0188,116434,86293,18500000,459,food_beverage,groceries_retail
+user_0377,mahasiswa_bandung,User #0377 (Bandung),bandung,Bandung,-6.91083,107.59251,dev_trusted_0377,ip_home_0188,56646,26803,4200000,328,food_beverage,digital_vouchers_crypto
+user_0378,pengusaha_surabaya,User #0378 (Surabaya),surabaya,Surabaya,-7.23189,112.73252,dev_trusted_0378,ip_home_0189,705042,372128,65000000,1096,electronics_gadgets,p2p_cash_transfer
+user_0379,freelancer_bali,User #0379 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.68504,115.17382,dev_trusted_0379,ip_home_0189,224270,130550,24000000,393,food_beverage,electronics_gadgets
+user_0380,karyawan_jakarta,User #0380 (Jakarta),jakarta,Jakarta,-6.22266,106.87238,dev_trusted_0380,ip_home_0190,136305,83342,18500000,695,food_beverage,groceries_retail
+user_0381,mahasiswa_bandung,User #0381 (Bandung),bandung,Bandung,-6.94652,107.61991,dev_trusted_0381,ip_home_0190,56215,32533,4200000,319,food_beverage,digital_vouchers_crypto
+user_0382,pengusaha_surabaya,User #0382 (Surabaya),surabaya,Surabaya,-7.27701,112.76485,dev_trusted_0382,ip_home_0191,920361,309334,65000000,1227,electronics_gadgets,p2p_cash_transfer
+user_0383,freelancer_bali,User #0383 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.74669,115.1972,dev_trusted_0383,ip_home_0191,242298,133336,24000000,358,food_beverage,electronics_gadgets
+user_0384,karyawan_jakarta,User #0384 (Jakarta),jakarta,Jakarta,-6.23614,106.87127,dev_trusted_0384,ip_home_0192,88971,99394,18500000,635,food_beverage,groceries_retail
+user_0385,mahasiswa_bandung,User #0385 (Bandung),bandung,Bandung,-6.94731,107.60452,dev_trusted_0385,ip_home_0192,46607,39547,4200000,345,food_beverage,digital_vouchers_crypto
+user_0386,pengusaha_surabaya,User #0386 (Surabaya),surabaya,Surabaya,-7.30048,112.74201,dev_trusted_0386,ip_home_0193,739943,656714,65000000,998,electronics_gadgets,p2p_cash_transfer
+user_0387,freelancer_bali,User #0387 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.63039,115.21177,dev_trusted_0387,ip_home_0193,173399,125777,24000000,417,food_beverage,electronics_gadgets
+user_0388,karyawan_jakarta,User #0388 (Jakarta),jakarta,Jakarta,-6.24067,106.84797,dev_trusted_0388,ip_home_0194,101976,57200,18500000,605,food_beverage,groceries_retail
+user_0389,mahasiswa_bandung,User #0389 (Bandung),bandung,Bandung,-6.96257,107.6003,dev_trusted_0389,ip_home_0194,47499,30426,4200000,460,food_beverage,digital_vouchers_crypto
+user_0390,pengusaha_surabaya,User #0390 (Surabaya),surabaya,Surabaya,-7.25609,112.75823,dev_trusted_0390,ip_home_0195,623509,496048,65000000,1139,electronics_gadgets,p2p_cash_transfer
+user_0391,freelancer_bali,User #0391 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.69611,115.2353,dev_trusted_0391,ip_home_0195,172115,133986,24000000,437,food_beverage,electronics_gadgets
+user_0392,karyawan_jakarta,User #0392 (Jakarta),jakarta,Jakarta,-6.20469,106.82959,dev_trusted_0392,ip_home_0196,119920,81989,18500000,573,food_beverage,groceries_retail
+user_0393,mahasiswa_bandung,User #0393 (Bandung),bandung,Bandung,-6.90537,107.62506,dev_trusted_0393,ip_home_0196,54268,32740,4200000,351,food_beverage,digital_vouchers_crypto
+user_0394,pengusaha_surabaya,User #0394 (Surabaya),surabaya,Surabaya,-7.2634,112.74443,dev_trusted_0394,ip_home_0197,863347,689968,65000000,999,electronics_gadgets,p2p_cash_transfer
+user_0395,freelancer_bali,User #0395 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.65125,115.16527,dev_trusted_0395,ip_home_0197,216844,173076,24000000,533,food_beverage,electronics_gadgets
+user_0396,karyawan_jakarta,User #0396 (Jakarta),jakarta,Jakarta,-6.20453,106.83159,dev_trusted_0396,ip_home_0198,125582,81786,18500000,569,food_beverage,groceries_retail
+user_0397,mahasiswa_bandung,User #0397 (Bandung),bandung,Bandung,-6.92475,107.62406,dev_trusted_0397,ip_home_0198,48670,30767,4200000,157,food_beverage,digital_vouchers_crypto
+user_0398,pengusaha_surabaya,User #0398 (Surabaya),surabaya,Surabaya,-7.24773,112.76573,dev_trusted_0398,ip_home_0199,879536,629626,65000000,1127,electronics_gadgets,p2p_cash_transfer
+user_0399,freelancer_bali,User #0399 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.6607,115.2202,dev_trusted_0399,ip_home_0199,207116,128852,24000000,689,food_beverage,electronics_gadgets
+user_0400,karyawan_jakarta,User #0400 (Jakarta),jakarta,Jakarta,-6.2201,106.82895,dev_trusted_0400,ip_home_0200,133137,88211,18500000,513,food_beverage,groceries_retail
+user_0401,mahasiswa_bandung,User #0401 (Bandung),bandung,Bandung,-6.88943,107.61675,dev_trusted_0401,ip_home_0200,45834,41241,4200000,336,food_beverage,digital_vouchers_crypto
+user_0402,pengusaha_surabaya,User #0402 (Surabaya),surabaya,Surabaya,-7.28911,112.79653,dev_trusted_0402,ip_home_0201,933996,549158,65000000,1263,electronics_gadgets,p2p_cash_transfer
+user_0403,freelancer_bali,User #0403 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66652,115.2119,dev_trusted_0403,ip_home_0201,189200,152218,24000000,532,food_beverage,electronics_gadgets
+user_0404,karyawan_jakarta,User #0404 (Jakarta),jakarta,Jakarta,-6.20843,106.82585,dev_trusted_0404,ip_home_0202,127436,84110,18500000,519,food_beverage,groceries_retail
+user_0405,mahasiswa_bandung,User #0405 (Bandung),bandung,Bandung,-6.9543,107.63323,dev_trusted_0405,ip_home_0202,33534,36078,4200000,236,food_beverage,digital_vouchers_crypto
+user_0406,pengusaha_surabaya,User #0406 (Surabaya),surabaya,Surabaya,-7.22479,112.73976,dev_trusted_0406,ip_home_0203,934084,517254,65000000,1130,electronics_gadgets,p2p_cash_transfer
+user_0407,freelancer_bali,User #0407 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.65208,115.20104,dev_trusted_0407,ip_home_0203,241391,119132,24000000,516,food_beverage,electronics_gadgets
+user_0408,karyawan_jakarta,User #0408 (Jakarta),jakarta,Jakarta,-6.18573,106.8621,dev_trusted_0408,ip_home_0204,160933,75266,18500000,515,food_beverage,groceries_retail
+user_0409,mahasiswa_bandung,User #0409 (Bandung),bandung,Bandung,-6.94236,107.63561,dev_trusted_0409,ip_home_0204,59107,35536,4200000,178,food_beverage,digital_vouchers_crypto
+user_0410,pengusaha_surabaya,User #0410 (Surabaya),surabaya,Surabaya,-7.23833,112.72148,dev_trusted_0410,ip_home_0205,997766,785738,65000000,1152,electronics_gadgets,p2p_cash_transfer
+user_0411,freelancer_bali,User #0411 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.65592,115.20028,dev_trusted_0411,ip_home_0205,152978,127342,24000000,391,food_beverage,electronics_gadgets
+user_0412,karyawan_jakarta,User #0412 (Jakarta),jakarta,Jakarta,-6.24498,106.88866,dev_trusted_0412,ip_home_0206,130116,89841,18500000,612,food_beverage,groceries_retail
+user_0413,mahasiswa_bandung,User #0413 (Bandung),bandung,Bandung,-6.92182,107.64321,dev_trusted_0413,ip_home_0206,54733,37786,4200000,262,food_beverage,digital_vouchers_crypto
+user_0414,pengusaha_surabaya,User #0414 (Surabaya),surabaya,Surabaya,-7.26605,112.71693,dev_trusted_0414,ip_home_0207,597836,528421,65000000,1125,electronics_gadgets,p2p_cash_transfer
+user_0415,freelancer_bali,User #0415 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.70265,115.21174,dev_trusted_0415,ip_home_0207,211693,94723,24000000,407,food_beverage,electronics_gadgets
+user_0416,karyawan_jakarta,User #0416 (Jakarta),jakarta,Jakarta,-6.19862,106.85528,dev_trusted_0416,ip_home_0208,103368,87020,18500000,732,food_beverage,groceries_retail
+user_0417,mahasiswa_bandung,User #0417 (Bandung),bandung,Bandung,-6.89807,107.61672,dev_trusted_0417,ip_home_0208,51139,31695,4200000,322,food_beverage,digital_vouchers_crypto
+user_0418,pengusaha_surabaya,User #0418 (Surabaya),surabaya,Surabaya,-7.25262,112.76784,dev_trusted_0418,ip_home_0209,866813,617548,65000000,1128,electronics_gadgets,p2p_cash_transfer
+user_0419,freelancer_bali,User #0419 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.65088,115.23437,dev_trusted_0419,ip_home_0209,184657,102028,24000000,628,food_beverage,electronics_gadgets
+user_0420,karyawan_jakarta,User #0420 (Jakarta),jakarta,Jakarta,-6.20238,106.80274,dev_trusted_0420,ip_home_0210,111615,94841,18500000,614,food_beverage,groceries_retail
+user_0421,mahasiswa_bandung,User #0421 (Bandung),bandung,Bandung,-6.9303,107.65412,dev_trusted_0421,ip_home_0210,46359,30809,4200000,299,food_beverage,digital_vouchers_crypto
+user_0422,pengusaha_surabaya,User #0422 (Surabaya),surabaya,Surabaya,-7.24774,112.76451,dev_trusted_0422,ip_home_0211,966182,566382,65000000,1164,electronics_gadgets,p2p_cash_transfer
+user_0423,freelancer_bali,User #0423 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.67698,115.21417,dev_trusted_0423,ip_home_0211,213387,144517,24000000,559,food_beverage,electronics_gadgets
+user_0424,karyawan_jakarta,User #0424 (Jakarta),jakarta,Jakarta,-6.19492,106.84671,dev_trusted_0424,ip_home_0212,109828,85862,18500000,637,food_beverage,groceries_retail
+user_0425,mahasiswa_bandung,User #0425 (Bandung),bandung,Bandung,-6.91267,107.67426,dev_trusted_0425,ip_home_0212,50678,37217,4200000,376,food_beverage,digital_vouchers_crypto
+user_0426,pengusaha_surabaya,User #0426 (Surabaya),surabaya,Surabaya,-7.25505,112.81055,dev_trusted_0426,ip_home_0213,801799,576737,65000000,1048,electronics_gadgets,p2p_cash_transfer
+user_0427,freelancer_bali,User #0427 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.67929,115.21882,dev_trusted_0427,ip_home_0213,236658,146700,24000000,603,food_beverage,electronics_gadgets
+user_0428,karyawan_jakarta,User #0428 (Jakarta),jakarta,Jakarta,-6.21117,106.8373,dev_trusted_0428,ip_home_0214,175699,90026,18500000,575,food_beverage,groceries_retail
+user_0429,mahasiswa_bandung,User #0429 (Bandung),bandung,Bandung,-6.93486,107.59553,dev_trusted_0429,ip_home_0214,62726,33087,4200000,291,food_beverage,digital_vouchers_crypto
+user_0430,pengusaha_surabaya,User #0430 (Surabaya),surabaya,Surabaya,-7.25909,112.77039,dev_trusted_0430,ip_home_0215,742040,461265,65000000,1140,electronics_gadgets,p2p_cash_transfer
+user_0431,freelancer_bali,User #0431 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.65548,115.22091,dev_trusted_0431,ip_home_0215,184502,154227,24000000,423,food_beverage,electronics_gadgets
+user_0432,karyawan_jakarta,User #0432 (Jakarta),jakarta,Jakarta,-6.22184,106.822,dev_trusted_0432,ip_home_0216,149396,93076,18500000,694,food_beverage,groceries_retail
+user_0433,mahasiswa_bandung,User #0433 (Bandung),bandung,Bandung,-6.88632,107.68942,dev_trusted_0433,ip_home_0216,40898,31123,4200000,224,food_beverage,digital_vouchers_crypto
+user_0434,pengusaha_surabaya,User #0434 (Surabaya),surabaya,Surabaya,-7.27877,112.72516,dev_trusted_0434,ip_home_0217,811794,449630,65000000,1150,electronics_gadgets,p2p_cash_transfer
+user_0435,freelancer_bali,User #0435 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66921,115.22463,dev_trusted_0435,ip_home_0217,225993,152663,24000000,456,food_beverage,electronics_gadgets
+user_0436,karyawan_jakarta,User #0436 (Jakarta),jakarta,Jakarta,-6.15577,106.85146,dev_trusted_0436,ip_home_0218,90078,72219,18500000,483,food_beverage,groceries_retail
+user_0437,mahasiswa_bandung,User #0437 (Bandung),bandung,Bandung,-6.91707,107.61605,dev_trusted_0437,ip_home_0218,51135,45557,4200000,329,food_beverage,digital_vouchers_crypto
+user_0438,pengusaha_surabaya,User #0438 (Surabaya),surabaya,Surabaya,-7.23935,112.72882,dev_trusted_0438,ip_home_0219,722609,553036,65000000,1135,electronics_gadgets,p2p_cash_transfer
+user_0439,freelancer_bali,User #0439 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.71691,115.20809,dev_trusted_0439,ip_home_0219,210443,135481,24000000,416,food_beverage,electronics_gadgets
+user_0440,karyawan_jakarta,User #0440 (Jakarta),jakarta,Jakarta,-6.22229,106.84118,dev_trusted_0440,ip_home_0220,126702,92711,18500000,737,food_beverage,groceries_retail
+user_0441,mahasiswa_bandung,User #0441 (Bandung),bandung,Bandung,-6.92486,107.6077,dev_trusted_0441,ip_home_0220,58610,38206,4200000,240,food_beverage,digital_vouchers_crypto
+user_0442,pengusaha_surabaya,User #0442 (Surabaya),surabaya,Surabaya,-7.23774,112.77659,dev_trusted_0442,ip_home_0221,1014690,696711,65000000,1042,electronics_gadgets,p2p_cash_transfer
+user_0443,freelancer_bali,User #0443 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.67015,115.21288,dev_trusted_0443,ip_home_0221,206910,126365,24000000,356,food_beverage,electronics_gadgets
+user_0444,karyawan_jakarta,User #0444 (Jakarta),jakarta,Jakarta,-6.20648,106.82639,dev_trusted_0444,ip_home_0222,126612,74875,18500000,541,food_beverage,groceries_retail
+user_0445,mahasiswa_bandung,User #0445 (Bandung),bandung,Bandung,-6.91164,107.62287,dev_trusted_0445,ip_home_0222,59779,46475,4200000,304,food_beverage,digital_vouchers_crypto
+user_0446,pengusaha_surabaya,User #0446 (Surabaya),surabaya,Surabaya,-7.24537,112.72516,dev_trusted_0446,ip_home_0223,685919,680583,65000000,1036,electronics_gadgets,p2p_cash_transfer
+user_0447,freelancer_bali,User #0447 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.6966,115.21162,dev_trusted_0447,ip_home_0223,207158,121047,24000000,462,food_beverage,electronics_gadgets
+user_0448,karyawan_jakarta,User #0448 (Jakarta),jakarta,Jakarta,-6.17807,106.82545,dev_trusted_0448,ip_home_0224,98868,97018,18500000,684,food_beverage,groceries_retail
+user_0449,mahasiswa_bandung,User #0449 (Bandung),bandung,Bandung,-6.93301,107.57955,dev_trusted_0449,ip_home_0224,48856,34712,4200000,384,food_beverage,digital_vouchers_crypto
+user_0450,pengusaha_surabaya,User #0450 (Surabaya),surabaya,Surabaya,-7.28341,112.74999,dev_trusted_0450,ip_home_0225,936080,353545,65000000,1213,electronics_gadgets,p2p_cash_transfer
+user_0451,freelancer_bali,User #0451 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.70006,115.2209,dev_trusted_0451,ip_home_0225,217770,162776,24000000,539,food_beverage,electronics_gadgets
+user_0452,karyawan_jakarta,User #0452 (Jakarta),jakarta,Jakarta,-6.26823,106.82598,dev_trusted_0452,ip_home_0226,127591,82514,18500000,682,food_beverage,groceries_retail
+user_0453,mahasiswa_bandung,User #0453 (Bandung),bandung,Bandung,-6.89777,107.63431,dev_trusted_0453,ip_home_0226,53232,25306,4200000,239,food_beverage,digital_vouchers_crypto
+user_0454,pengusaha_surabaya,User #0454 (Surabaya),surabaya,Surabaya,-7.24709,112.72484,dev_trusted_0454,ip_home_0227,930487,624942,65000000,1131,electronics_gadgets,p2p_cash_transfer
+user_0455,freelancer_bali,User #0455 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.74709,115.18065,dev_trusted_0455,ip_home_0227,269414,128522,24000000,311,food_beverage,electronics_gadgets
+user_0456,karyawan_jakarta,User #0456 (Jakarta),jakarta,Jakarta,-6.17792,106.84593,dev_trusted_0456,ip_home_0228,145717,88531,18500000,681,food_beverage,groceries_retail
+user_0457,mahasiswa_bandung,User #0457 (Bandung),bandung,Bandung,-6.90842,107.63654,dev_trusted_0457,ip_home_0228,73788,40097,4200000,137,food_beverage,digital_vouchers_crypto
+user_0458,pengusaha_surabaya,User #0458 (Surabaya),surabaya,Surabaya,-7.24633,112.78064,dev_trusted_0458,ip_home_0229,1003344,514805,65000000,1224,electronics_gadgets,p2p_cash_transfer
+user_0459,freelancer_bali,User #0459 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.64731,115.27691,dev_trusted_0459,ip_home_0229,186374,129344,24000000,462,food_beverage,electronics_gadgets
+user_0460,karyawan_jakarta,User #0460 (Jakarta),jakarta,Jakarta,-6.22106,106.82335,dev_trusted_0460,ip_home_0230,73199,79457,18500000,673,food_beverage,groceries_retail
+user_0461,mahasiswa_bandung,User #0461 (Bandung),bandung,Bandung,-6.92983,107.66748,dev_trusted_0461,ip_home_0230,55110,41777,4200000,303,food_beverage,digital_vouchers_crypto
+user_0462,pengusaha_surabaya,User #0462 (Surabaya),surabaya,Surabaya,-7.23684,112.75908,dev_trusted_0462,ip_home_0231,1024520,554614,65000000,1164,electronics_gadgets,p2p_cash_transfer
+user_0463,freelancer_bali,User #0463 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66134,115.20539,dev_trusted_0463,ip_home_0231,222756,186922,24000000,465,food_beverage,electronics_gadgets
+user_0464,karyawan_jakarta,User #0464 (Jakarta),jakarta,Jakarta,-6.19831,106.87704,dev_trusted_0464,ip_home_0232,146379,85149,18500000,425,food_beverage,groceries_retail
+user_0465,mahasiswa_bandung,User #0465 (Bandung),bandung,Bandung,-6.90458,107.56361,dev_trusted_0465,ip_home_0232,67126,35889,4200000,369,food_beverage,digital_vouchers_crypto
+user_0466,pengusaha_surabaya,User #0466 (Surabaya),surabaya,Surabaya,-7.28005,112.71329,dev_trusted_0466,ip_home_0233,883246,547227,65000000,1075,electronics_gadgets,p2p_cash_transfer
+user_0467,freelancer_bali,User #0467 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66838,115.28179,dev_trusted_0467,ip_home_0233,236287,162039,24000000,565,food_beverage,electronics_gadgets
+user_0468,karyawan_jakarta,User #0468 (Jakarta),jakarta,Jakarta,-6.17181,106.84085,dev_trusted_0468,ip_home_0234,86473,82595,18500000,713,food_beverage,groceries_retail
+user_0469,mahasiswa_bandung,User #0469 (Bandung),bandung,Bandung,-6.94175,107.61469,dev_trusted_0469,ip_home_0234,49292,42885,4200000,347,food_beverage,digital_vouchers_crypto
+user_0470,pengusaha_surabaya,User #0470 (Surabaya),surabaya,Surabaya,-7.24121,112.76764,dev_trusted_0470,ip_home_0235,845250,566298,65000000,1013,electronics_gadgets,p2p_cash_transfer
+user_0471,freelancer_bali,User #0471 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.72516,115.21635,dev_trusted_0471,ip_home_0235,220205,165394,24000000,631,food_beverage,electronics_gadgets
+user_0472,karyawan_jakarta,User #0472 (Jakarta),jakarta,Jakarta,-6.16955,106.82065,dev_trusted_0472,ip_home_0236,118395,91124,18500000,867,food_beverage,groceries_retail
+user_0473,mahasiswa_bandung,User #0473 (Bandung),bandung,Bandung,-6.8805,107.64708,dev_trusted_0473,ip_home_0236,51800,30363,4200000,351,food_beverage,digital_vouchers_crypto
+user_0474,pengusaha_surabaya,User #0474 (Surabaya),surabaya,Surabaya,-7.28502,112.74614,dev_trusted_0474,ip_home_0237,835365,681415,65000000,1088,electronics_gadgets,p2p_cash_transfer
+user_0475,freelancer_bali,User #0475 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.73148,115.22521,dev_trusted_0475,ip_home_0237,187980,140895,24000000,482,food_beverage,electronics_gadgets
+user_0476,karyawan_jakarta,User #0476 (Jakarta),jakarta,Jakarta,-6.21564,106.86536,dev_trusted_0476,ip_home_0238,96258,78408,18500000,701,food_beverage,groceries_retail
+user_0477,mahasiswa_bandung,User #0477 (Bandung),bandung,Bandung,-6.93285,107.57888,dev_trusted_0477,ip_home_0238,60515,40896,4200000,275,food_beverage,digital_vouchers_crypto
+user_0478,pengusaha_surabaya,User #0478 (Surabaya),surabaya,Surabaya,-7.30652,112.76975,dev_trusted_0478,ip_home_0239,638364,575475,65000000,1040,electronics_gadgets,p2p_cash_transfer
+user_0479,freelancer_bali,User #0479 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.6995,115.20155,dev_trusted_0479,ip_home_0239,204226,126471,24000000,542,food_beverage,electronics_gadgets
+user_0480,karyawan_jakarta,User #0480 (Jakarta),jakarta,Jakarta,-6.21995,106.8701,dev_trusted_0480,ip_home_0240,130271,76106,18500000,562,food_beverage,groceries_retail
+user_0481,mahasiswa_bandung,User #0481 (Bandung),bandung,Bandung,-6.95869,107.62637,dev_trusted_0481,ip_home_0240,52074,22545,4200000,231,food_beverage,digital_vouchers_crypto
+user_0482,pengusaha_surabaya,User #0482 (Surabaya),surabaya,Surabaya,-7.28003,112.79149,dev_trusted_0482,ip_home_0241,632895,431088,65000000,1219,electronics_gadgets,p2p_cash_transfer
+user_0483,freelancer_bali,User #0483 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.63658,115.19398,dev_trusted_0483,ip_home_0241,190089,152940,24000000,280,food_beverage,electronics_gadgets
+user_0484,karyawan_jakarta,User #0484 (Jakarta),jakarta,Jakarta,-6.25533,106.83858,dev_trusted_0484,ip_home_0242,154060,79444,18500000,649,food_beverage,groceries_retail
+user_0485,mahasiswa_bandung,User #0485 (Bandung),bandung,Bandung,-6.88916,107.67177,dev_trusted_0485,ip_home_0242,50241,34911,4200000,443,food_beverage,digital_vouchers_crypto
+user_0486,pengusaha_surabaya,User #0486 (Surabaya),surabaya,Surabaya,-7.29555,112.77779,dev_trusted_0486,ip_home_0243,720164,558453,65000000,1098,electronics_gadgets,p2p_cash_transfer
+user_0487,freelancer_bali,User #0487 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.69445,115.18802,dev_trusted_0487,ip_home_0243,218707,160906,24000000,478,food_beverage,electronics_gadgets
+user_0488,karyawan_jakarta,User #0488 (Jakarta),jakarta,Jakarta,-6.20705,106.85988,dev_trusted_0488,ip_home_0244,106782,94431,18500000,713,food_beverage,groceries_retail
+user_0489,mahasiswa_bandung,User #0489 (Bandung),bandung,Bandung,-6.85241,107.6097,dev_trusted_0489,ip_home_0244,51220,39037,4200000,353,food_beverage,digital_vouchers_crypto
+user_0490,pengusaha_surabaya,User #0490 (Surabaya),surabaya,Surabaya,-7.27088,112.74202,dev_trusted_0490,ip_home_0245,918994,481724,65000000,1083,electronics_gadgets,p2p_cash_transfer
+user_0491,freelancer_bali,User #0491 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66826,115.2375,dev_trusted_0491,ip_home_0245,190955,101309,24000000,317,food_beverage,electronics_gadgets
+user_0492,karyawan_jakarta,User #0492 (Jakarta),jakarta,Jakarta,-6.24029,106.81277,dev_trusted_0492,ip_home_0246,122101,69841,18500000,576,food_beverage,groceries_retail
+user_0493,mahasiswa_bandung,User #0493 (Bandung),bandung,Bandung,-6.93685,107.60809,dev_trusted_0493,ip_home_0246,65910,38475,4200000,281,food_beverage,digital_vouchers_crypto
+user_0494,pengusaha_surabaya,User #0494 (Surabaya),surabaya,Surabaya,-7.26903,112.74127,dev_trusted_0494,ip_home_0247,891787,598193,65000000,1038,electronics_gadgets,p2p_cash_transfer
+user_0495,freelancer_bali,User #0495 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.66959,115.16181,dev_trusted_0495,ip_home_0247,216668,156005,24000000,464,food_beverage,electronics_gadgets
+user_0496,karyawan_jakarta,User #0496 (Jakarta),jakarta,Jakarta,-6.16339,106.82357,dev_trusted_0496,ip_home_0248,129077,84543,18500000,630,food_beverage,groceries_retail
+user_0497,mahasiswa_bandung,User #0497 (Bandung),bandung,Bandung,-6.92036,107.62178,dev_trusted_0497,ip_home_0248,61995,42233,4200000,279,food_beverage,digital_vouchers_crypto
+user_0498,pengusaha_surabaya,User #0498 (Surabaya),surabaya,Surabaya,-7.23712,112.73456,dev_trusted_0498,ip_home_0249,947659,487135,65000000,1218,electronics_gadgets,p2p_cash_transfer
+user_0499,freelancer_bali,User #0499 (Denpasar (Bali)),denpasar,Denpasar (Bali),-8.61523,115.20955,dev_trusted_0499,ip_home_0249,140934,128490,24000000,600,food_beverage,electronics_gadgets

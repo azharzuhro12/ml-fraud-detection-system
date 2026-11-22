@@ -1,0 +1,24 @@
+{
+  "n_users_total": 500,
+  "n_transactions_total": 23134,
+  "n_train_transactions": 18507,
+  "n_test_transactions": 4627,
+  "overall_fraud_rate_pct": 4.9,
+  "total_fraud_transactions": 1134,
+  "total_legitimate_transactions": 22000,
+  "temporal_cutoff_timestamp": 1712091992,
+  "fraud_pattern_breakdown": {
+    "legitimate": 22000,
+    "velocity_card_testing": 681,
+    "account_takeover_ato": 227,
+    "syndicate_fraud_ring": 226
+  },
+  "merchant_category_breakdown": {
+    "food_beverage": 7700,
+    "electronics_gadgets": 5421,
+    "digital_vouchers_crypto": 3761,
+    "p2p_cash_transfer": 3002,
+    "groceries_retail": 2820,
+    "fashion_marketplace": 430
+  }
+}

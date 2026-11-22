@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NusaPay: Aplikasi Dompet Digital &amp; Proteksi Pintar (Draft Without Direction)</title>
+  <style>
+    :root {
+      /* Warm Friendly Consumer Wallet Theme (Easy on the eyes, like Blu / GoPay / SeaBank) */
+      --bg-canvas: #EEF4F1;
+      --bg-hero: linear-gradient(180deg, #D5EAE2 0%, #EEF4F1 100%);
+      --bg-surface: #FFFFFF;
+      --bg-soft: #F3F7F5;
+      --text-main: #111C18;
+      --text-muted: #3F4E48;
+
+      /* Primary Brand: Deep Emerald Banking Teal */
+      --brand: #0A5C48;
+      --brand-hover: #074435;
+      --brand-on: #FFFFFF;
+      --brand-light: #DDF2EC;
+      --brand-light-text: #063F31;
+
+      /* Wallet Card Rich Gradient (Purpose: Visual identity of user's physical/digital bank card) */
+      --wallet-card-bg: linear-gradient(135deg, #084738 0%, #0E6B54 100%);
+      --wallet-card-text: #FFFFFF;
+      --wallet-card-sub: #D1F2E8;
+
+      /* 3-Tier Receipt Status Colors (WCAG AA Checked) */
+      --safe-bg: #E3F7ED;
+      --safe-border: #0D6E42;
+      --safe-text: #064528;
+
+      --otp-bg: #FFF4D4;
+      --otp-border: #9E6300;
+      --otp-text: #4A2D00;
+
+      --block-bg: #FDE7E7;
+      --block-border: #B42318;
+      --block-text: #691008;
+
+      --border-line: #CBD8D2;
+      --border-strong: #677B73;
+      --shadow-card: 0 6px 18px rgba(10, 50, 38, 0.07);
+      --shadow-float: 0 12px 32px rgba(10, 50, 38, 0.16);
+      --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    html[data-theme="dark"] {
+      --bg-canvas: #0D1311;
+      --bg-hero: linear-gradient(180deg, #132620 0%, #0D1311 100%);
+      --bg-surface: #161F1C;
+      --bg-soft: #1F2B27;
+      --text-main: #F0F7F4;
+      --text-muted: #B8C9C2;
+
+      --brand: #4AD2B2;
+      --brand-hover: #6FE0C5;
+      --brand-on: #061A14;
+      --brand-light: #15362E;
+      --brand-light-text: #88F0D6;
+
+      --wallet-card-bg: linear-gradient(135deg, #0D382E 0%, #145947 100%);
+      --wallet-card-text: #FFFFFF;
+      --wallet-card-sub: #C8EFE4;
+
+      --safe-bg: #112F23;
+      --safe-border: #34D399;
+      --safe-text: #A7F3D0;
+
+      --otp-bg: #30230D;
+      --otp-border: #FBBF24;
+      --otp-text: #FDE68A;
+
+      --block-bg: #361518;
+      --block-border: #F87171;
+      --block-text: #FECACA;
+
+      --border-line: #293833;
+      --border-strong: #778F86;
+      --shadow-card: 0 6px 18px rgba(0, 0, 0, 0.42);
+      --shadow-float: 0 14px 34px rgba(0, 0, 0, 0.68);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-canvas);
+      background-image: radial-gradient(var(--border-line) 1px, transparent 1px);
+      background-size: 26px 26px;
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      font-size: clamp(0.94rem, 0.9rem + 0.15vw, 1rem);
+      line-height: 1.5;
+      padding-bottom: 64px;
+    }
+
+    a[href], button, select, summary, label[for] {
+      cursor: pointer;
+    }
+
+    input[type="number"] {
+      cursor: text;
+    }
+
+    button:disabled, select:disabled, input:disabled {
+      cursor: not-allowed;
+      opacity: 0.55;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--brand);
+      outline-offset: 2px;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 12px;
+      background: var(--brand);
+      color: var(--brand-on);
+      padding: 10px 16px;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 8px;
+      z-index: 4000;
+    }
+    .skip-link:focus {
+      top: 12px;
+    }
+
+    /* Top App Header */
+    header {
+      background-color: var(--bg-surface);
+      border-bottom: 1.5px solid var(--border-line);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: var(--shadow-card);
+    }
+
+    .topbar {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .brand-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .app-logo-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background-color: var(--brand);
+      color: var(--brand-on);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-icon svg {
+      width: 22px;
+      height: 22px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2.3;
+    }
+
+    .logo-name {
+      margin: 0;
+      font-size: 1.38rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+    }
+
+    .user-switcher-pill {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--bg-soft);
+      border: 1.5px solid var(--border-strong);
+      border-radius: 999px;
+      padding: 4px 14px 4px 12px;
+      min-height: 44px;
+    }
+
+    .user-switcher-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      display: block;
+      line-height: 1;
+    }
+
+    .user-switcher-select {
+      border: none;
+      background: transparent;
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      font-weight: 800;
+      padding: 2px 0;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 44px;
+      min-width: 44px;
+      padding: 8px 16px;
+      border-radius: 12px;
+      border: 1.5px solid var(--border-strong);
+      background-color: var(--bg-surface);
+      color: var(--text-main);
+      font-weight: 800;
+      font-size: 0.9rem;
+      font-family: var(--font-sans);
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: var(--bg-soft);
+    }
+
+    .btn-primary {
+      background-color: var(--brand);
+      color: var(--brand-on);
+      border-color: var(--brand);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--brand-hover);
+      border-color: var(--brand-hover);
+    }
+
+    /* Hero Band with Digital Bank Card */
+    .hero-band {
+      background: var(--bg-hero);
+      border-bottom: 1.5px solid var(--border-line);
+      padding: 22px 16px 26px 16px;
+    }
+
+    .hero-container {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    /* Sleek Digital Wallet Card (Looks like a real GoPay / SeaBank / Apple Card) */
+    .bank-card {
+      background: var(--wallet-card-bg);
+      color: var(--wallet-card-text);
+      border-radius: 22px;
+      padding: 24px 26px;
+      box-shadow: var(--shadow-float);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      align-items: center;
+    }
+
+    @media (min-width: 760px) {
+      .bank-card {
+        grid-template-columns: 1.3fr 1fr;
+      }
+    }
+
+    .bank-card-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+
+    .protect-chip {
+      background-color: rgba(255, 255, 255, 0.18);
+      color: #FFFFFF;
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+
+    .wallet-label {
+      font-size: 0.88rem;
+      color: var(--wallet-card-sub);
+      font-weight: 700;
+      display: block;
+    }
+
+    .wallet-big-balance {
+      font-size: clamp(1.75rem, 1.4rem + 1.2vw, 2.35rem);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      margin: 2px 0 10px 0;
+      display: block;
+    }
+
+    .wallet-owner-line {
+      font-size: 0.9rem;
+      color: var(--wallet-card-sub);
+      font-weight: 600;
+    }
+
+    .saved-shield-box {
+      background-color: rgba(255, 255, 255, 0.14);
+      border: 1.5px solid rgba(255, 255, 255, 0.38);
+      border-radius: 16px;
+      padding: 16px 18px;
+    }
+
+    .saved-shield-label {
+      font-size: 0.82rem;
+      color: var(--wallet-card-sub);
+      font-weight: 700;
+      display: block;
+    }
+
+    .saved-shield-amount {
+      font-size: 1.5rem;
+      font-weight: 900;
+      margin: 4px 0;
+      display: block;
+    }
+
+    .saved-shield-note {
+      font-size: 0.78rem;
+      color: var(--wallet-card-sub);
+    }
+
+    /* Main Content Container */
+    main {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 24px 16px;
+    }
+
+    .section-title-block {
+      margin-bottom: 16px;
+    }
+
+    .section-title-block h2 {
+      margin: 0 0 4px 0;
+      font-size: 1.25rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+    }
+
+    .section-title-block p {
+      margin: 0;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+
+    /* 4 Visual Action Tiles (Like Real App Payment & Security Test Menu) */
+    .action-tiles-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    @media (min-width: 580px) {
+      .action-tiles-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 980px) {
+      .action-tiles-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .action-tile-btn {
+      background-color: var(--bg-surface);
+      border: 2px solid var(--border-line);
+      border-radius: 18px;
+      padding: 16px;
+      text-align: left;
+      color: var(--text-main);
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+      min-height: 156px;
+    }
+
+    .action-tile-btn:hover {
+      border-color: var(--brand);
+      transform: translateY(-1px);
+    }
+
+    .action-tile-btn[aria-pressed="true"] {
+      border-width: 3px;
+      border-color: var(--brand);
+      background-color: var(--brand-light);
+    }
+
+    .tile-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .tile-icon-circle {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .tile-icon-circle svg {
+      width: 24px;
+      height: 24px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .pill-badge {
+      font-size: 0.74rem;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: 999px;
+    }
+
+    .pill-safe {
+      background-color: var(--safe-bg);
+      color: var(--safe-text);
+      border: 1px solid var(--safe-border);
+    }
+
+    .pill-otp {
+      background-color: var(--otp-bg);
+      color: var(--otp-text);
+      border: 1px solid var(--otp-border);
+    }
+
+    .pill-block {
+      background-color: var(--block-bg);
+      color: var(--block-text);
+      border: 1px solid var(--block-border);
+    }
+
+    .tile-title {
+      margin: 0 0 4px 0;
+      font-size: 1rem;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+
+    .tile-desc {
+      margin: 0;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    /* Two-Column Bottom Area: Digital Receipt Card (Left) + Mutation & Custom Transfer (Right) */
+    .app-columns {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 22px;
+    }
+
+    @media (min-width: 900px) {
+      .app-columns {
+        grid-template-columns: 1.15fr 0.85fr;
+      }
+    }
+
+    /* Digital Payment Receipt & Protection Card (Super Visual & Easy to Understand!) */
+    .receipt-card {
+      background-color: var(--bg-surface);
+      border: 2px solid var(--border-line);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+    }
+
+    .receipt-banner {
+      padding: 22px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      border-bottom: 2px solid var(--border-line);
+    }
+
+    .receipt-banner.status-approve {
+      background-color: var(--safe-bg);
+      color: var(--safe-text);
+      border-bottom-color: var(--safe-border);
+    }
+
+    .receipt-banner.status-challenge {
+      background-color: var(--otp-bg);
+      color: var(--otp-text);
+      border-bottom-color: var(--otp-border);
+    }
+
+    .receipt-banner.status-block {
+      background-color: var(--block-bg);
+      color: var(--block-text);
+      border-bottom-color: var(--block-border);
+    }
+
+    .status-big-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background-color: var(--bg-surface);
+      border: 2px solid currentColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .status-big-icon svg {
+      width: 30px;
+      height: 30px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2.6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .status-heading-col h3 {
+      margin: 0 0 4px 0;
+      font-size: 1.22rem;
+      font-weight: 900;
+    }
+
+    .status-heading-col p {
+      margin: 0;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .receipt-body {
+      padding: 22px 24px;
+    }
+
+    /* Summary Table inside Receipt */
+    .receipt-summary-box {
+      background-color: var(--bg-soft);
+      border: 1.5px solid var(--border-line);
+      border-radius: 14px;
+      padding: 14px 16px;
+      margin-bottom: 18px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+    }
+
+    .summary-cell span {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      font-weight: 700;
+      display: block;
+    }
+
+    .summary-cell strong {
+      font-size: 1.02rem;
+      font-weight: 800;
+      display: block;
+      margin-top: 2px;
+    }
+
+    /* 4 Simple Visual Security Checklists (Perangkat, Lokasi, Nominal, Kecepatan) */
+    .checklist-title {
+      margin: 0 0 10px 0;
+      font-size: 0.98rem;
+      font-weight: 800;
+    }
+
+    .security-checks-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    @media (min-width: 540px) {
+      .security-checks-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .check-box-item {
+      border: 1.5px solid var(--border-line);
+      border-radius: 12px;
+      padding: 12px 14px;
+      background-color: var(--bg-surface);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .check-box-item.is-alert {
+      background-color: var(--block-bg);
+      border-color: var(--block-border);
+      color: var(--block-text);
+    }
+
+    .check-box-item.is-warn {
+      background-color: var(--otp-bg);
+      border-color: var(--otp-border);
+      color: var(--otp-text);
+    }
+
+    .check-box-item.is-ok {
+      background-color: var(--safe-bg);
+      border-color: var(--safe-border);
+      color: var(--safe-text);
+    }
+
+    .check-dot-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: var(--bg-surface);
+      border: 1.5px solid currentColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 0.8rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .check-label-title {
+      font-weight: 800;
+      font-size: 0.88rem;
+      display: block;
+    }
+
+    .check-label-sub {
+      font-size: 0.79rem;
+      display: block;
+      margin-top: 2px;
+    }
+
+    /* Right Column: Mutation Feed & Collapsible Custom Form */
+    .side-card {
+      background-color: var(--bg-surface);
+      border: 1.5px solid var(--border-line);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 18px;
+    }
+
+    .side-card h3 {
+      margin: 0 0 12px 0;
+      font-size: 1.05rem;
+      font-weight: 900;
+    }
+
+    .mutation-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .mutation-row {
+      padding: 12px 14px;
+      border-radius: 14px;
+      background-color: var(--bg-soft);
+      border: 1px solid var(--border-line);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .form-field {
+      margin-bottom: 12px;
+    }
+
+    .form-field label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+
+    .input-box {
+      width: 100%;
+      min-height: 44px;
+      padding: 8px 12px;
+      border-radius: 10px;
+      border: 1.5px solid var(--border-strong);
+      background-color: var(--bg-surface);
+      color: var(--text-main);
+      font-size: 0.92rem;
+      font-weight: 600;
+      font-family: var(--font-sans);
+    }
+
+    /* Developer Drawer at Bottom */
+    details.dev-drawer {
+      margin-top: 28px;
+      background-color: var(--bg-surface);
+      border: 1.5px solid var(--border-line);
+      border-radius: 16px;
+      padding: 12px 18px;
+      box-shadow: var(--shadow-card);
+    }
+
+    details.dev-drawer summary {
+      min-height: 44px;
+      font-weight: 800;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .table-scroll {
+      width: 100%;
+      overflow-x: auto;
+      margin-top: 12px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.84rem;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 9px 10px;
+      border-bottom: 1px solid var(--border-line);
+    }
+
+    th {
+      background-color: var(--bg-soft);
+      font-weight: 800;
+    }
+
+    dialog {
+      max-width: 440px;
+      width: calc(100% - 32px);
+      border: 2px solid var(--border-strong);
+      border-radius: 20px;
+      background-color: var(--bg-surface);
+      color: var(--text-main);
+      padding: 24px;
+      box-shadow: var(--shadow-float);
+    }
+
+    dialog::backdrop {
+      background: rgba(0, 0, 0, 0.65);
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-app" class="skip-link">Lewati ke simulasi pembayaran</a>
+
+  <!-- Top App Bar -->
+  <header>
+    <div class="topbar">
+      <div class="brand-left">
+        <a href="#main-app" class="app-logo-link">
+          <span class="logo-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </span>
+          <h1 class="logo-name">NusaPay</h1>
+        </a>
+
+        <div class="user-switcher-pill">
+          <div>
+            <label for="user-select" class="user-switcher-label">Akun Dompet Aktif</label>
+            <select id="user-select" class="user-switcher-select"></select>
+          </div>
+        </div>
+      </div>
+
+      <nav style="display:flex; gap:8px; align-items:center;" aria-label="Menu atas">
+        <button type="button" id="reset-wallet-btn" class="btn">Reset Saldo</button>
+        <button type="button" id="theme-toggle-btn" class="btn" aria-pressed="false">Mode Gelap</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Digital Bank Card -->
+  <div class="hero-band">
+    <div class="hero-container">
+      <section class="bank-card" aria-labelledby="owner-name-text">
+        <div>
+          <div class="bank-card-top">
+            <span class="protect-chip">NusaPay Shield Aktif</span>
+            <span id="owner-city-chip" class="protect-chip">Lokasi: Jakarta</span>
+          </div>
+          <span class="wallet-label">Saldo Dompet Digital Anda</span>
+          <strong id="wallet-balance-val" class="wallet-big-balance">Rp 18.500.000</strong>
+          <span id="owner-name-text" class="wallet-owner-line">Budi Santoso • Kebiasaan belanja harian ~Rp 125.000</span>
+        </div>
+
+        <div class="saved-shield-box">
+          <span class="saved-shield-label">Uang Anda yang Diselamatkan dari Pembajak</span>
+          <strong id="saved-fraud-val" class="saved-shield-amount">Rp 0</strong>
+          <span class="saved-shield-note">Otomatis bertambah saat sistem memblokir transaksi pencurian saldo.</span>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <main id="main-app">
+    <!-- 4 Friendly Action Cards (1-Click Testing for Any User) -->
+    <div class="section-title-block">
+      <h2>Pilih Transaksi untuk Dicoba (Klik Salah Satu Kartu di Bawah):</h2>
+      <p>Lihat bagaimana aplikasi dompet digital membedakan transaksi Anda sendiri vs. upaya pembobolan oleh hacker secara instan:</p>
+    </div>
+
+    <div class="action-tiles-grid" role="group" aria-label="Pilihan simulasi transaksi">
+      <!-- Tile 1: Normal Coffee -->
+      <button type="button" class="action-tile-btn" data-sim="normal_qris" aria-pressed="true">
+        <div class="tile-top-row">
+          <span class="tile-icon-circle" style="background:#DDF2EC; color:#064528;">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/></svg>
+          </span>
+          <span class="pill-badge pill-safe">Langsung Berhasil</span>
+        </div>
+        <div>
+          <h3 class="tile-title">1. Beli Kopi QRIS</h3>
+          <p class="tile-desc">Bayar Rp 56.000 di dekat rumah memakai HP pribadi Anda.</p>
+        </div>
+      </button>
+
+      <!-- Tile 2: Big Mall Purchase needing OTP -->
+      <button type="button" class="action-tile-btn" data-sim="travel_splurge_otp" aria-pressed="false">
+        <div class="tile-top-row">
+          <span class="tile-icon-circle" style="background:#FFF4D4; color:#7A4B00;">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          </span>
+          <span class="pill-badge pill-otp">Minta PIN / OTP</span>
+        </div>
+        <div>
+          <h3 class="tile-title">2. Belanja Baju Mahal</h3>
+          <p class="tile-desc">Belanja Rp 550.000 (4x lipat kebiasaan harian). Sistem meminta kode OTP.</p>
+        </div>
+      </button>
+
+      <!-- Tile 3: Hacker Account Takeover -->
+      <button type="button" class="action-tile-btn" data-sim="account_takeover_attack" aria-pressed="false">
+        <div class="tile-top-row">
+          <span class="tile-icon-circle" style="background:#FDE7E7; color:#9E1C13;">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </span>
+          <span class="pill-badge pill-block">Otomatis Diblokir</span>
+        </div>
+        <div>
+          <h3 class="tile-title">3. Hacker Luar Negeri</h3>
+          <p class="tile-desc">Pembajak di Singapura mencoba menguras Rp 15 Juta dari HP asing.</p>
+        </div>
+      </button>
+
+      <!-- Tile 4: Syndicate Bot -->
+      <button type="button" class="action-tile-btn" data-sim="syndicate_velocity_bot" aria-pressed="false">
+        <div class="tile-top-row">
+          <span class="tile-icon-circle" style="background:#FDE7E7; color:#9E1C13;">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </span>
+          <span class="pill-badge pill-block">Otomatis Diblokir</span>
+        </div>
+        <div>
+          <h3 class="tile-title">4. Serangan Bot Beruntun</h3>
+          <p class="tile-desc">4x transaksi cepat dalam 1 menit dari HP sindikat penipuan.</p>
+        </div>
+      </button>
+    </div>
+
+    <!-- Main Columns: Left = Visual Digital Receipt, Right = Recent Activity & Custom Transfer -->
+    <div class="app-columns">
+      <!-- Left: Visual Digital Payment Receipt & 4 Simple Security Checklists -->
+      <section class="receipt-card" aria-labelledby="receipt-status-title" aria-live="polite">
+        <div id="receipt-banner-box" class="receipt-banner status-approve">
+          <div id="receipt-big-icon" class="status-big-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="status-heading-col">
+            <h3 id="receipt-status-title">PEMBAYARAN BERHASIL &amp; AMAN</h3>
+            <p id="receipt-status-sub">Transaksi Anda telah selesai diproses.</p>
+          </div>
+        </div>
+
+        <div class="receipt-body">
+          <!-- Step-Up OTP Prompt Box (Only appears when decision == CHALLENGE_OTP) -->
+          <div id="otp-prompt-box" style="background:var(--otp-bg); border:2px solid var(--otp-border); color:var(--otp-text); border-radius:14px; padding:14px 16px; margin-bottom:18px;" hidden>
+            <strong style="display:block; margin-bottom:6px;">Konfirmasi Bahwa Ini Benar Anda</strong>
+            <p style="margin:0 0 12px 0; font-size:0.88rem;">
+              Kami menahan sementara pembayaran ini karena nominalnya jauh lebih besar dari belanja harian Anda. Tekan tombol di bawah untuk memasukkan kode OTP:
+            </p>
+            <button type="button" id="open-otp-modal-btn" class="btn btn-primary" style="width:100%;">
+              Masukkan Kode OTP &amp; Selesaikan Pembayaran
+            </button>
+          </div>
+
+          <!-- Key Transaction Details -->
+          <div class="receipt-summary-box">
+            <div class="summary-cell">
+              <span>Tujuan Pembayaran</span>
+              <strong id="rec-merchant">-</strong>
+            </div>
+            <div class="summary-cell">
+              <span>Nominal Transaksi</span>
+              <strong id="rec-amount">Rp 0</strong>
+            </div>
+            <div class="summary-cell">
+              <span>Lokasi &amp; Waktu Proses</span>
+              <strong id="rec-location">-</strong>
+            </div>
+            <div class="summary-cell">
+              <span>Tingkat Bahaya (AI)</span>
+              <strong id="rec-risk-badge">Aman (2/100)</strong>
+            </div>
+          </div>
+
+          <!-- 4 Simple Security Checklists that ANY non-technical person understands immediately -->
+          <h4 class="checklist-title">Hasil Pemeriksaan 4 Pengecekan Keamanan:</h4>
+          <div id="four-checks-grid" class="security-checks-grid"></div>
+        </div>
+      </section>
+
+      <!-- Right: Recent Wallet Mutation History & Optional Custom Payment -->
+      <div>
+        <section class="side-card" aria-labelledby="mutation-heading">
+          <h3 id="mutation-heading">Riwayat Transaksi Dompet Anda</h3>
+          <ul id="tx-history-list" class="mutation-list"></ul>
+        </section>
+
+        <details class="dev-drawer" style="margin-top:0;">
+          <summary>
+            <span>Coba Buat Transaksi dengan Nominal &amp; Lokasi Sendiri</span>
+            <span class="pill-badge pill-safe">Buka Form</span>
+          </summary>
+          <form id="custom-tx-form" style="margin-top:14px; padding-top:14px; border-top:1px solid var(--border-line);">
+            <div class="form-field">
+              <label for="input-amount">Nominal Rupiah (Rp)</label>
+              <input type="number" id="input-amount" class="input-box" value="250000" min="5000" max="50000000" step="5000">
+            </div>
+            <div class="form-field">
+              <label for="input-category">Jenis Transaksi</label>
+              <select id="input-category" class="input-box">
+                <option value="food_beverage">Makanan &amp; Kedai Kopi (QRIS)</option>
+                <option value="groceries_retail">Supermarket &amp; Belanja Harian</option>
+                <option value="fashion_marketplace">Belanja Fashion &amp; Mall</option>
+                <option value="electronics_gadgets">Beli HP / Laptop / Elektronik</option>
+                <option value="digital_vouchers_crypto">Top-Up Voucher Game &amp; Crypto</option>
+                <option value="p2p_cash_transfer">Transfer Saldo Tunai ke Akun Lain</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="input-city">Dari Kota Mana Transaksi Dikirim?</label>
+              <select id="input-city" class="input-box">
+                <option value="jakarta">Jakarta</option>
+                <option value="bandung">Bandung</option>
+                <option value="surabaya">Surabaya</option>
+                <option value="denpasar">Denpasar (Bali)</option>
+                <option value="medan">Medan</option>
+                <option value="singapore_vpn">Singapura (Luar Negeri)</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="input-device">HP / Perangkat yang Dipakai</label>
+              <select id="input-device" class="input-box">
+                <option value="trusted_owner_device">HP Pribadi Saya Sendiri</option>
+                <option value="new_unknown_device">HP Asing / Baru Pertama Kali Login</option>
+                <option value="syndicate_ring_device">HP Sindikat Penipuan (Dipakai 6 Akun)</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+              Kirim Pembayaran Sekarang
+            </button>
+          </form>
+        </details>
+      </div>
+    </div>
+
+    <!-- Optional Developer Metrics Table at the very bottom -->
+    <details class="dev-drawer">
+      <summary>
+        <span>Info Teknis Developer: Tabel Benchmark Akurasi Model ML (4.627 Transaksi Uji)</span>
+        <span>Klik untuk melihat</span>
+      </summary>
+      <div class="table-scroll">
+        <table id="benchmark-table">
+          <thead>
+            <tr>
+              <th>Model Deteksi Penipuan</th>
+              <th>PR-AUC</th>
+              <th>ROC-AUC</th>
+              <th>Recall @ 1% FPR</th>
+              <th>Kerugian Gagal Dicegah</th>
+              <th>Total Uang Pelanggan Diselamatkan</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </details>
+  </main>
+
+  <!-- Step-Up OTP Dialog -->
+  <dialog id="otp-modal" aria-labelledby="otp-modal-title">
+    <h2 id="otp-modal-title" style="margin-top:0; font-size:1.2rem;">Masukkan Kode Verifikasi OTP</h2>
+    <p style="font-size:0.9rem; color:var(--text-muted);">
+      Kode OTP 6-digit telah dikirim ke nomor HP terdaftar Anda. Klik <strong>Konfirmasi OTP</strong> untuk menyelesaikan pembayaran:
+    </p>
+    <div style="background:var(--bg-soft); border:1.5px solid var(--border-line); padding:14px; border-radius:12px; text-align:center; font-family:var(--font-mono); font-size:1.4rem; font-weight:900; letter-spacing:0.2em; margin-bottom:16px;">
+      8 4 9 2 0 1
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+      <button type="button" id="cancel-otp-btn" class="btn">Batal</button>
+      <button type="button" id="confirm-otp-btn" class="btn btn-primary">Konfirmasi OTP</button>
+    </div>
+  </dialog>
+
+  <script>
+    const STATUS_ICONS = {
+      APPROVE: `<svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>`,
+      CHALLENGE_OTP: `<svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>`,
+      BLOCK: `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>`
+    };
+
+    function formatIdr(val) {
+      return "Rp " + Number(val).toLocaleString("id-ID");
+    }
+
+    const userSelect = document.getElementById("user-select");
+    const themeToggleBtn = document.getElementById("theme-toggle-btn");
+    const resetWalletBtn = document.getElementById("reset-wallet-btn");
+    const otpModal = document.getElementById("otp-modal");
+    const openOtpModalBtn = document.getElementById("open-otp-modal-btn");
+
+    let activeUserId = "user_0000";
+    let loadedUsersMap = new Map();
+    let currentPendingOtpTxId = null;
+
+    themeToggleBtn.addEventListener("click", () => {
+      const htmlEl = document.documentElement;
+      const next = htmlEl.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      htmlEl.setAttribute("data-theme", next);
+      themeToggleBtn.setAttribute("aria-pressed", String(next === "dark"));
+      themeToggleBtn.textContent = next === "dark" ? "Mode Terang" : "Mode Gelap";
+    });
+
+    openOtpModalBtn.addEventListener("click", () => otpModal.showModal());
+    document.getElementById("cancel-otp-btn").addEventListener("click", () => otpModal.close());
+    otpModal.addEventListener("click", (e) => { if (e.target === otpModal) otpModal.close(); });
+
+    document.getElementById("confirm-otp-btn").addEventListener("click", async () => {
+      if (!currentPendingOtpTxId) return;
+      const res = await fetch(`/verify-otp/${encodeURIComponent(currentPendingOtpTxId)}?user_id=${encodeURIComponent(activeUserId)}`, {
+        method: "POST"
+      });
+      if (res.ok) {
+        const updatedTx = await res.json();
+        otpModal.close();
+        await loadUsers(false);
+        renderReceipt(updatedTx);
+      }
+    });
+
+    resetWalletBtn.addEventListener("click", async () => {
+      await fetch(`/reset/${encodeURIComponent(activeUserId)}`, { method: "POST" });
+      await loadUsers(false);
+      selectScenarioTile("normal_qris");
+      await triggerScenario("normal_qris");
+    });
+
+    userSelect.addEventListener("change", async () => {
+      activeUserId = userSelect.value;
+      updateWalletHeaderCard();
+      const u = loadedUsersMap.get(activeUserId);
+      if (u) {
+        document.getElementById("input-city").value = u.home_city;
+      }
+      selectScenarioTile("normal_qris");
+      await triggerScenario("normal_qris");
+    });
+
+    function selectScenarioTile(simName) {
+      document.querySelectorAll(".action-tile-btn").forEach((b) => {
+        b.setAttribute("aria-pressed", b.getAttribute("data-sim") === simName ? "true" : "false");
+      });
+    }
+
+    document.querySelectorAll(".action-tile-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const sim = btn.getAttribute("data-sim");
+        selectScenarioTile(sim);
+        triggerScenario(sim);
+      });
+    });
+
+    document.getElementById("custom-tx-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      document.querySelectorAll(".action-tile-btn").forEach((b) => b.setAttribute("aria-pressed", "false"));
+      const amt = Number(document.getElementById("input-amount").value) || 100000;
+      const cat = document.getElementById("input-category").value;
+      const city = document.getElementById("input-city").value;
+      const devMode = document.getElementById("input-device").value;
+
+      const res = await fetch("/assess", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          user_id: activeUserId,
+          amount_idr: amt,
+          merchant_category: cat,
+          location_city: city,
+          device_mode: devMode,
+          time_mode: "normal_daytime",
+          payment_method: "wallet_balance",
+          merchant_name: "Pembayaran Kustom Anda"
+        })
+      });
+      if (res.ok) {
+        const txData = await res.json();
+        await loadUsers(false);
+        renderReceipt(txData);
+      }
+    });
+
+    async function loadUsers(setInitial = true) {
+      const res = await fetch("/users");
+      if (!res.ok) return;
+      const data = await res.json();
+      loadedUsersMap.clear();
+
+      if (setInitial) userSelect.innerHTML = "";
+      data.users.forEach((u, idx) => {
+        loadedUsersMap.set(u.user_id, u);
+        if (setInitial) {
+          if (idx === 0) activeUserId = u.user_id;
+          const opt = document.createElement("option");
+          opt.value = u.user_id;
+          opt.textContent = u.display_name;
+          userSelect.appendChild(opt);
+        }
+      });
+      updateWalletHeaderCard();
+    }
+
+    function updateWalletHeaderCard() {
+      const u = loadedUsersMap.get(activeUserId);
+      if (!u) return;
+      document.getElementById("owner-city-chip").textContent = `Domisili: ${u.home_city_label}`;
+      document.getElementById("wallet-balance-val").textContent = formatIdr(u.wallet_balance_idr);
+      document.getElementById("saved-fraud-val").textContent = formatIdr(u.saved_fraud_total_idr);
+      document.getElementById("owner-name-text").textContent =
+        `${u.display_name} • Rata-rata belanja harian ~${formatIdr(u.typical_spend_mean_idr)}`;
+
+      renderHistoryList(u.recent_transactions || []);
+    }
+
+    async function triggerScenario(scenarioName) {
+      const res = await fetch(`/simulate/${encodeURIComponent(scenarioName)}?user_id=${encodeURIComponent(activeUserId)}`, {
+        method: "POST"
+      });
+      if (res.ok) {
+        const txData = await res.json();
+        await loadUsers(false);
+        renderReceipt(txData);
+      }
+    }
+
+    function renderReceipt(tx) {
+      const banner = document.getElementById("receipt-banner-box");
+      const iconBox = document.getElementById("receipt-big-icon");
+      const titleEl = document.getElementById("receipt-status-title");
+      const subEl = document.getElementById("receipt-status-sub");
+
+      banner.className = "receipt-banner " + (
+        tx.decision === "BLOCK"
+          ? "status-block"
+          : (tx.decision === "CHALLENGE_OTP" ? "status-challenge" : "status-approve")
+      );
+      iconBox.innerHTML = STATUS_ICONS[tx.decision] || STATUS_ICONS.APPROVE;
+      titleEl.textContent = tx.decision_label_id;
+      subEl.textContent = tx.decision_summary_id;
+
+      document.getElementById("rec-merchant").textContent = tx.merchant_name;
+      document.getElementById("rec-amount").textContent = formatIdr(tx.amount_idr);
+      document.getElementById("rec-location").textContent = `${tx.city_label} (${tx.latency_ms.toFixed(1)} ms)`;
+
+      const riskLabel = tx.decision === "BLOCK"
+        ? `Bahaya Tinggi (${tx.risk_score}/100)`
+        : (tx.decision === "CHALLENGE_OTP" ? `Perlu Cek (${tx.risk_score}/100)` : `Aman (${tx.risk_score}/100)`);
+      document.getElementById("rec-risk-badge").textContent = riskLabel;
+
+      const otpBox = document.getElementById("otp-prompt-box");
+      if (tx.decision === "CHALLENGE_OTP" && !tx.otp_verified) {
+        currentPendingOtpTxId = tx.tx_id;
+        otpBox.hidden = false;
+      } else {
+        currentPendingOtpTxId = null;
+        otpBox.hidden = true;
+      }
+
+      // Build 4 intuitive visual security check cards (Perangkat, Lokasi, Nominal, Kecepatan)
+      const feat = tx.assessment_detail?.features_snapshot || {};
+      const checksGrid = document.getElementById("four-checks-grid");
+      checksGrid.innerHTML = "";
+
+      // 1. Pengecekan HP / Perangkat
+      let devState = "is-ok";
+      let devMark = "OK";
+      let devTitle = "1. HP / Perangkat: Aman";
+      let devDesc = "Menggunakan HP pribadi Anda yang terdaftar.";
+      if (feat.graph_device_unique_users_count >= 3) {
+        devState = "is-alert";
+        devMark = "!";
+        devTitle = `1. Perangkat Sindikat (${feat.graph_device_unique_users_count} Akun)`;
+        devDesc = "Bahaya! 1 HP ini terdeteksi dipakai bersama oleh banyak akun curian.";
+      } else if (feat.device_is_untrusted_for_user >= 0.5) {
+        devState = "is-alert";
+        devMark = "!";
+        devTitle = "1. Perangkat Asing / Baru";
+        devDesc = "Transaksi berasal dari perangkat yang belum pernah Anda gunakan.";
+      }
+
+      // 2. Pengecekan Lokasi & Jarak
+      let locState = "is-ok";
+      let locMark = "OK";
+      let locTitle = `2. Lokasi (${tx.city_label}): Aman`;
+      let locDesc = "Berada di area kota domisili harian Anda.";
+      if (feat.geo_travel_speed_kmh >= 350) {
+        locState = "is-alert";
+        locMark = "!";
+        locTitle = `2. Perpindahan Mustahil (${Math.round(feat.geo_dist_from_prev_tx_km)} km)`;
+        locDesc = `Baru saja transaksi di Indonesia, tiba-tiba berpindah ke ${tx.city_label} dalam hitungan menit.`;
+      } else if (feat.geo_dist_from_home_km >= 80) {
+        locState = "is-warn";
+        locMark = "?";
+        locTitle = `2. Lokasi Luar Kota (${tx.city_label})`;
+        locDesc = `Berjarak ${Math.round(feat.geo_dist_from_home_km)} km dari kota tempat tinggal Anda.`;
+      }
+
+      // 3. Pengecekan Nominal Belanja
+      let amtState = "is-ok";
+      let amtMark = "OK";
+      let amtTitle = "3. Nominal Belanja: Wajar";
+      let amtDesc = "Sesuai dengan rata-rata transaksi harian Anda.";
+      if (feat.amount_to_user_mean_ratio >= 6.0) {
+        amtState = "is-alert";
+        amtMark = "!";
+        amtTitle = `3. Nominal Melonjak ${feat.amount_to_user_mean_ratio.toFixed(0)}x Lipat`;
+        amtDesc = "Mencoba menarik/membayar jumlah sangat besar sekaligus.";
+      } else if (feat.amount_to_user_mean_ratio >= 3.0) {
+        amtState = "is-warn";
+        amtMark = "?";
+        amtTitle = `3. Nominal ${feat.amount_to_user_mean_ratio.toFixed(1)}x Lebih Besar`;
+        amtDesc = "Lebih tinggi dari kebiasaan harian sehingga memerlukan konfirmasi OTP.";
+      }
+
+      // 4. Pengecekan Frekuensi / Kecepatan Transaksi
+      let velState = "is-ok";
+      let velMark = "OK";
+      let velTitle = "4. Kecepatan Transaksi: Normal";
+      let velDesc = "Tidak ada aktivitas beruntun yang mencurigakan.";
+      if (feat.velocity_tx_count_10m >= 2) {
+        velState = "is-alert";
+        velMark = "!";
+        velTitle = `4. Transaksi Beruntun (${feat.velocity_tx_count_10m + 1}x / 10 Menit)`;
+        velDesc = "Terdeteksi serangan bot otomatis yang menembak transaksi bertubi-tubi.";
+      }
+
+      [
+        { state: devState, mark: devMark, title: devTitle, desc: devDesc },
+        { state: locState, mark: locMark, title: locTitle, desc: locDesc },
+        { state: amtState, mark: amtMark, title: amtTitle, desc: amtDesc },
+        { state: velState, mark: velMark, title: velTitle, desc: velDesc }
+      ].forEach((c) => {
+        const div = document.createElement("div");
+        div.className = `check-box-item ${c.state}`;
+        div.innerHTML = `
+          <span class="check-dot-icon" aria-hidden="true">${c.mark}</span>
+          <div>
+            <span class="check-label-title">${c.title}</span>
+            <span class="check-label-sub">${c.desc}</span>
+          </div>
+        `;
+        checksGrid.appendChild(div);
+      });
+    }
+
+    function renderHistoryList(items) {
+      const list = document.getElementById("tx-history-list");
+      list.innerHTML = "";
+      if (!items || items.length === 0) {
+        list.innerHTML = `<li class="mutation-row">Belum ada transaksi di sesi ini.</li>`;
+        return;
+      }
+      items.forEach((it) => {
+        const li = document.createElement("li");
+        li.className = "mutation-row";
+        const pillClass = it.decision === "BLOCK"
+          ? "pill-block"
+          : (it.decision === "CHALLENGE_OTP" ? "pill-otp" : "pill-safe");
+        const statusText = it.decision === "BLOCK"
+          ? "DIBLOKIR (Saldo Aman)"
+          : (it.decision === "CHALLENGE_OTP" ? "MENUNGGU OTP" : "BERHASIL");
+
+        li.innerHTML = `
+          <div>
+            <strong>${it.merchant_name}</strong><br>
+            <span style="font-size:0.78rem; color:var(--text-muted);">${it.city_label}</span>
+          </div>
+          <div style="text-align:right;">
+            <strong>${formatIdr(it.amount_idr)}</strong><br>
+            <span class="pill-badge ${pillClass}">${statusText}</span>
+          </div>
+        `;
+        list.appendChild(li);
+      });
+    }
+
+    async function loadBenchmarks() {
+      try {
+        const res = await fetch("/metrics");
+        if (!res.ok) return;
+        const data = await res.json();
+        const tbody = document.querySelector("#benchmark-table tbody");
+        tbody.innerHTML = "";
+        const comp = data.model_comparison || {};
+        const names = {
+          "1_heuristic_rules_baseline": "1. Aturan Statis Biasa (Tanpa ML)",
+          "2_unsupervised_isolation_forest": "2. Deteksi Anomali Isolation Forest",
+          "3_hybrid_lgbm_isoforest_shield": "3. NusaPay Shield (Hybrid LightGBM + IsoForest + Graph)"
+        };
+        Object.entries(comp).forEach(([k, m]) => {
+          const tr = document.createElement("tr");
+          tr.innerHTML = `
+            <td><strong>${names[k] || k}</strong></td>
+            <td>${Number(m.pr_auc).toFixed(4)}</td>
+            <td>${Number(m.roc_auc).toFixed(4)}</td>
+            <td>${(Number(m.recall_at_1pct_fpr) * 100).toFixed(1)}%</td>
+            <td>${formatIdr(m.missed_fraud_loss_idr)}</td>
+            <td><strong>${formatIdr(m.net_financial_savings_idr)}</strong></td>
+          `;
+          tbody.appendChild(tr);
+        });
+      } catch (_) {}
+    }
+
+    async function initApp() {
+      await loadUsers(true);
+      await Promise.all([
+        triggerScenario("normal_qris"),
+        loadBenchmarks()
+      ]);
+    }
+
+    initApp();
+  </script>
+</body>
+</html>

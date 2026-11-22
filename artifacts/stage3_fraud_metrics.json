@@ -1,0 +1,63 @@
+{
+  "n_test_transactions": 4627,
+  "n_test_fraud_transactions": 223,
+  "training_time_sec": 2.049,
+  "avg_inference_latency_per_tx_ms": 0.0464,
+  "model_comparison": {
+    "1_heuristic_rules_baseline": {
+      "pr_auc": 0.4328,
+      "roc_auc": 0.7798,
+      "recall_at_1pct_fpr": 0.3229,
+      "precision": 0.8625,
+      "recall": 0.3094,
+      "false_positive_rate_pct": 0.25,
+      "total_fraud_exposure_idr": 1138855000,
+      "fraud_prevented_idr": 802824000,
+      "missed_fraud_loss_idr": 336031000,
+      "net_financial_savings_idr": 802549000
+    },
+    "2_unsupervised_isolation_forest": {
+      "pr_auc": 0.8695,
+      "roc_auc": 0.985,
+      "recall_at_1pct_fpr": 0.7578,
+      "precision": 0.9091,
+      "recall": 0.7175,
+      "false_positive_rate_pct": 0.36,
+      "total_fraud_exposure_idr": 1138855000,
+      "fraud_prevented_idr": 1130780000,
+      "missed_fraud_loss_idr": 8075000,
+      "net_financial_savings_idr": 1130380000
+    },
+    "3_hybrid_lgbm_isoforest_shield": {
+      "pr_auc": 1.0,
+      "roc_auc": 1.0,
+      "recall_at_1pct_fpr": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_positive_rate_pct": 0.0,
+      "total_fraud_exposure_idr": 1138855000,
+      "fraud_prevented_idr": 1138855000,
+      "missed_fraud_loss_idr": 0,
+      "net_financial_savings_idr": 1138855000
+    }
+  },
+  "detection_rate_by_attack_pattern": {
+    "account_takeover_ato": 1.0,
+    "velocity_card_testing": 1.0,
+    "syndicate_fraud_ring": 1.0
+  },
+  "top_12_feature_importances": {
+    "ip_is_untrusted_for_user": 0.5758,
+    "merchant_category_base_risk": 0.1423,
+    "geo_dist_from_home_km": 0.1387,
+    "is_high_risk_payment_method": 0.0588,
+    "seconds_since_prev_user_tx": 0.0304,
+    "tx_amount_idr": 0.0136,
+    "amount_to_user_mean_ratio": 0.0096,
+    "amount_to_wallet_balance_ratio": 0.0072,
+    "device_is_untrusted_for_user": 0.0065,
+    "graph_device_unique_users_count": 0.0064,
+    "velocity_amount_to_mean_1h_ratio": 0.0028,
+    "graph_ip_unique_users_count": 0.0028
+  }
+}
